@@ -141,8 +141,8 @@ proxy.ts                 optional route protection (Next.js proxy)
 **Prerequisites:** Node.js 20+, npm, a Supabase project. Python 3.9+ is needed only to re-run the prediction pipeline.
 
 ```bash
-git clone https://github.com/satyam140/growtrack.git
-cd growtrack
+git clone https://github.com/Raj2381/grow-track.git
+cd grow-track
 npm install
 cp .env.example .env.local        # then fill in the values (see below)
 npm run db:migrate                # create tables, policies and views
