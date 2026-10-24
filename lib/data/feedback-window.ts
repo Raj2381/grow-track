@@ -3,8 +3,12 @@ import { DataError, friendlyMessage, type Db } from "./db";
 export type FeedbackWindow = { branchCode: string; isOpen: boolean; message: string; closesAt: string | null; updatedAt: string };
 
 /** Open means switched on and not past its closing time. The database never trusts the client's clock for who may write, only this display rule uses it. */
-export const isWindowOpen = (w: FeedbackWindow | null, now = Date.now()) =>
-  Boolean(w && w.isOpen && (w.closesAt === null || new Date(w.closesAt).getTime() > now));
+export function isWindowOpen(w: FeedbackWindow | null, now?: number): boolean {
+  if (!w || !w.isOpen) return false;
+  if (w.closesAt === null) return true;
+  // the clock is read only when there is a closing time to compare with, never while the page is being prerendered
+  return new Date(w.closesAt).getTime() > (now ?? Date.now());
+}
 
 type Row = { branch_code: string; is_open: boolean; message: string; closes_at: string | null; updated_at: string };
 const toWindow = (r: Row): FeedbackWindow => ({ branchCode: r.branch_code, isOpen: r.is_open, message: r.message, closesAt: r.closes_at, updatedAt: r.updated_at });
