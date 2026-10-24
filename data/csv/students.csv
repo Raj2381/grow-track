@@ -1,0 +1,801 @@
+student_id,name,roll_no,department,branch_code,section,mentor_id,gender,residence,scholarship,entry_band,income_band,batch,current_semester,archetype_diagnostic
+STU-0001,Aarav Mehta,24CSE001,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0002,Charvi Patel,24CSE002,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0003,Kriti Singh,24ECE001,Electronics,ECE,A,FAC-ECE-1,Female,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0004,Nikhil Banerjee,24CSE003,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0005,Divya Chopra,24IT001,Information Technology,IT,A,FAC-IT-1,Female,Hostel,false,Top 10%,High,2024,5,high_achiever
+STU-0006,Karan Joshi,24IT002,Information Technology,IT,B,FAC-IT-2,Male,Hostel,false,Top 10%,High,2024,5,high_achiever
+STU-0007,Vivek Nair,24CSE004,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0008,Jatin Joshi,24ECE002,Electronics,ECE,B,FAC-ECE-2,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0009,Anika Tiwari,24IT003,Information Technology,IT,C,FAC-IT-3,Female,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0010,Eshan Mehta,24MEC001,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,sudden_drop
+STU-0011,Mohit Kaur,24MEC002,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,Top 25%,High,2024,5,sudden_drop
+STU-0012,Manav Sinha,24IT004,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0013,Radhika Ghosh,24CSE005,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Top 10%,Middle,2024,5,late_bloomer
+STU-0014,Varun Tiwari,24ECE003,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,true,Top 50%,Low,2024,5,consistent_average
+STU-0015,Kunal Iyer,24MEC003,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0016,Eshan Menon,24IT005,Information Technology,IT,B,FAC-IT-1,Male,Day scholar,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0017,Ishita Bose,24ECE004,Electronics,ECE,A,FAC-ECE-4,Female,Day scholar,false,Bottom 50%,High,2024,5,chronic_backlog
+STU-0018,Manav Verma,24IT006,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0019,Meera Khan,24IT007,Information Technology,IT,A,FAC-IT-3,Female,Hostel,false,Top 25%,Middle,2024,5,sudden_drop
+STU-0020,Vivek Reddy,24CSE006,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0021,Rahul Jain,24CSE007,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,false,Top 25%,Low,2024,5,high_cgpa_low_placement
+STU-0022,Harsh Sinha,24ECE005,Electronics,ECE,B,FAC-ECE-1,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0023,Rishi Agarwal,24CSE008,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,true,Top 25%,Low,2024,5,consistent_average
+STU-0024,Jiya Banerjee,24IT008,Information Technology,IT,B,FAC-IT-4,Female,Hostel,false,Top 10%,High,2024,5,disengaged_capable
+STU-0025,Ananya Rao,24ECE006,Electronics,ECE,C,FAC-ECE-2,Female,Hostel,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0026,Pranav Kaur,24CSE009,Computer Science,CSE,A,FAC-CSE-3,Male,Hostel,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0027,Rhea Agarwal,24CSE010,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0028,Diya Malhotra,24IT009,Information Technology,IT,C,FAC-IT-1,Female,Hostel,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0029,Lavanya Sinha,24CSE011,Computer Science,CSE,C,FAC-CSE-5,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0030,Pallavi Ghosh,24ECE007,Electronics,ECE,A,FAC-ECE-3,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0031,Yash Naik,24CIV001,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Day scholar,false,Top 25%,Middle,2024,5,slow_decliner
+STU-0032,Tejas Gupta,24MEC004,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Day scholar,false,Top 50%,,2024,5,skilled_poor_attendance
+STU-0033,Parth Gupta,24IT010,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0034,Nikhil Das,24CSE012,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0035,Manav Arora,24IT011,Information Technology,IT,B,FAC-IT-3,Male,Day scholar,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0036,Mohit Chopra,24ECE008,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0037,Pranav Chatterjee,24IT012,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 25%,Low,2024,5,consistent_average
+STU-0038,Rohan Sinha,24CIV002,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Day scholar,false,Top 25%,Low,2024,5,high_achiever
+STU-0039,Tejas Bose,24CSE013,Computer Science,CSE,A,FAC-CSE-1,Male,Day scholar,false,Top 25%,Low,2024,5,high_achiever
+STU-0040,Samarth Singh,24MEC005,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,false,Top 50%,High,2024,5,slow_decliner
+STU-0041,Riya Reddy,24CSE014,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0042,Tara Deshmukh,24ECE009,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0043,Aditya Kulkarni,24ECE010,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0044,Kriti Sharma,24CSE015,Computer Science,CSE,C,FAC-CSE-3,Female,Hostel,false,Top 10%,Middle,2024,5,disengaged_capable
+STU-0045,Siddharth Menon,24CSE016,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0046,Tejas Agarwal,24IT013,Information Technology,IT,A,FAC-IT-1,Male,Day scholar,true,Top 50%,,2024,5,chronic_backlog
+STU-0047,Vaidehi Das,24IT014,Information Technology,IT,B,FAC-IT-2,Female,Day scholar,false,Top 25%,High,2024,5,late_bloomer
+STU-0048,Pooja Thakur,24ECE011,Electronics,ECE,B,FAC-ECE-3,Female,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0049,Om Banerjee,24CSE017,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Top 50%,Low,2024,5,late_bloomer
+STU-0050,Esha Kulkarni,24CSE018,Computer Science,CSE,B,FAC-CSE-6,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0051,Rahul Thakur,24CSE019,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0052,Rohan Banerjee,24MEC006,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Day scholar,false,Top 25%,Middle,2024,5,skilled_poor_attendance
+STU-0053,Ishita Gupta,24CIV003,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Hostel,false,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0054,Tanvi Arora,24IT015,Information Technology,IT,C,FAC-IT-3,Female,Hostel,true,Top 10%,High,2024,5,high_achiever
+STU-0055,Mahika Mishra,24CIV004,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Female,Hostel,false,,Lower-middle,2024,5,consistent_average
+STU-0056,Gauri Tiwari,24CSE020,Computer Science,CSE,D,FAC-CSE-2,Female,Day scholar,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0057,Kunal Kulkarni,24MEC007,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0058,Manav Ghosh,24ECE012,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,true,Top 10%,High,2024,5,consistent_average
+STU-0059,Mohit Nair,24MEC008,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0060,Isha Jain,24CSE021,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0061,Diya Patel,24ECE013,Electronics,ECE,A,FAC-ECE-1,Female,Hostel,false,Top 25%,High,2024,5,high_achiever
+STU-0062,Charvi Sharma,24ECE014,Electronics,ECE,B,FAC-ECE-2,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0063,Naman Thakur,24MEC009,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,true,Top 10%,Low,2024,5,high_achiever
+STU-0064,Aarav Singh,24CSE022,Computer Science,CSE,B,FAC-CSE-4,Male,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0065,Vivek Jain,24MEC010,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Hostel,true,Top 25%,Middle,2024,5,consistent_average
+STU-0066,Rishi Sharma,24ECE015,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0067,Parth Kulkarni,24CIV005,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0068,Bhavesh Verma,24CSE023,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,false,Bottom 50%,,2024,5,chronic_backlog
+STU-0069,Arjun Sinha,24CSE024,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,true,,High,2024,5,high_achiever
+STU-0070,Aanya Iyer,24MEC011,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Hostel,false,Top 10%,Low,2024,5,skilled_poor_attendance
+STU-0071,Aditya Chatterjee,24ECE016,Electronics,ECE,A,FAC-ECE-4,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0072,Rhea Nair,24CSE025,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0073,Yashvi Mishra,24CSE026,Computer Science,CSE,B,FAC-CSE-2,Female,Hostel,true,Top 25%,Low,2024,5,late_bloomer
+STU-0074,Pooja Kulkarni,24ECE017,Electronics,ECE,B,FAC-ECE-1,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0075,Parth Singh,24CSE027,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0076,Nikhil Nair,24ECE018,Electronics,ECE,C,FAC-ECE-2,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0077,Rahul Pandey,24CIV006,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Male,Hostel,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0078,Pallavi Mishra,24CIV007,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Day scholar,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0079,Sanya Thakur,24CSE028,Computer Science,CSE,D,FAC-CSE-4,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0080,Rishi Banerjee,24CIV008,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Hostel,false,Bottom 50%,Low,2024,5,chronic_backlog
+STU-0081,Meera Ghosh,24MEC012,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,chronic_backlog
+STU-0082,Pooja Tiwari,24MEC013,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0083,Eshan Bose,24ECE019,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 50%,High,2024,5,late_bloomer
+STU-0084,Siddharth Nair,24ECE020,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0085,Naman Patel,24ECE021,Electronics,ECE,C,FAC-ECE-1,Male,Day scholar,false,Top 50%,High,2024,5,consistent_average
+STU-0086,Naman Khan,24CSE029,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,true,Top 50%,Low,2024,5,skilled_poor_attendance
+STU-0087,Yashvi Patel,24CSE030,Computer Science,CSE,B,FAC-CSE-6,Female,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0088,Zaid Tiwari,24IT016,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0089,Tanvi Bose,24IT017,Information Technology,IT,B,FAC-IT-1,Female,Day scholar,true,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0090,Pooja Nair,24CSE031,Computer Science,CSE,C,FAC-CSE-1,Female,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0091,Pooja Iyer,24CSE032,Computer Science,CSE,D,FAC-CSE-2,Female,Hostel,false,Top 10%,,2024,5,high_achiever
+STU-0092,Rajat Kaur,24ECE022,Electronics,ECE,A,FAC-ECE-2,Male,Hostel,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0093,Samarth Banerjee,24ECE023,Electronics,ECE,B,FAC-ECE-3,Male,Hostel,false,Top 25%,High,2024,5,high_cgpa_low_placement
+STU-0094,Dhruv Banerjee,24ECE024,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,true,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0095,Lavanya Arora,24ECE025,Electronics,ECE,A,FAC-ECE-1,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0096,Shruti Khan,24CSE033,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0097,Isha Mishra,24IT018,Information Technology,IT,C,FAC-IT-2,Female,Day scholar,false,Bottom 50%,High,2024,5,consistent_average
+STU-0098,Gaurav Reddy,24MEC014,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,Top 25%,High,2024,5,sudden_drop
+STU-0099,Aditi Singh,24CIV009,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Hostel,false,Top 25%,Low,2024,5,high_cgpa_low_placement
+STU-0100,Rahul Verma,24CSE034,Computer Science,CSE,B,FAC-CSE-4,Male,Day scholar,false,Top 50%,Low,2024,5,disengaged_capable
+STU-0101,Rhea Das,24CSE035,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0102,Tushar Das,24CSE036,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0103,Harsh Kapoor,24IT019,Information Technology,IT,A,FAC-IT-3,Male,Hostel,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0104,Yashvi Kapoor,24CSE037,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,true,Top 10%,Low,2024,5,high_achiever
+STU-0105,Priya Joshi,24ECE026,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,false,Top 10%,High,2024,5,consistent_average
+STU-0106,Radhika Tiwari,24ECE027,Electronics,ECE,C,FAC-ECE-3,Female,Hostel,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0107,Vihaan Ghosh,24CSE038,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Bottom 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0108,Karan Chopra,24CSE039,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 50%,Low,2024,5,consistent_average
+STU-0109,Simran Kaur,24ECE028,Electronics,ECE,A,FAC-ECE-4,Female,Hostel,false,Top 50%,High,2024,5,late_bloomer
+STU-0110,Dev Mishra,24CIV010,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0111,Neha Shah,24ECE029,Electronics,ECE,B,FAC-ECE-1,Female,Hostel,false,Top 50%,Low,2024,5,slow_decliner
+STU-0112,Dev Patel,24ECE030,Electronics,ECE,C,FAC-ECE-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0113,Jiya Ghosh,24ECE031,Electronics,ECE,A,FAC-ECE-3,Female,Day scholar,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0114,Rhea Chopra,24ECE032,Electronics,ECE,B,FAC-ECE-4,Female,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0115,Rohan Nair,24CSE040,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0116,Nikhil Ghosh,24ECE033,Electronics,ECE,C,FAC-ECE-1,Male,Hostel,false,Bottom 50%,Middle,2024,5,slow_decliner
+STU-0117,Dhruv Saxena,24ECE034,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0118,Rishi Nair,24IT020,Information Technology,IT,B,FAC-IT-4,Male,Hostel,true,Top 25%,Low,2024,5,consistent_average
+STU-0119,Shruti Shah,24IT021,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,true,Bottom 50%,Low,2024,5,slow_decliner
+STU-0120,Charvi Sinha,24CIV011,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Female,Hostel,true,Top 25%,Middle,2024,5,late_bloomer
+STU-0121,Vivek Naik,24MEC015,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Day scholar,true,Top 10%,High,2024,5,high_achiever
+STU-0122,Manav Khan,24MEC016,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Hostel,false,Bottom 50%,High,2024,5,slow_decliner
+STU-0123,Bhavna Kapoor,24IT022,Information Technology,IT,A,FAC-IT-2,Female,Hostel,false,Bottom 50%,Middle,2024,5,late_bloomer
+STU-0124,Neha Khan,24IT023,Information Technology,IT,B,FAC-IT-3,Female,Hostel,false,Top 50%,High,2024,5,high_cgpa_low_placement
+STU-0125,Vihaan Khan,24IT024,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,slow_decliner
+STU-0126,Arjun Pillai,24ECE035,Electronics,ECE,B,FAC-ECE-3,Male,Day scholar,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0127,Om Gupta,24IT025,Information Technology,IT,A,FAC-IT-1,Male,Hostel,false,Top 50%,Low,2024,5,consistent_average
+STU-0128,Dev Pillai,24ECE036,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0129,Vihaan Yadav,24IT026,Information Technology,IT,B,FAC-IT-2,Male,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0130,Tejas Sharma,24CSE041,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,sudden_drop
+STU-0131,Kriti Malhotra,24IT027,Information Technology,IT,C,FAC-IT-3,Female,Day scholar,false,Top 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0132,Vivek Yadav,24ECE037,Electronics,ECE,A,FAC-ECE-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0133,Tanvi Pillai,24MEC017,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Hostel,false,Top 25%,High,2024,5,high_cgpa_low_placement
+STU-0134,Bhavna Saxena,24ECE038,Electronics,ECE,B,FAC-ECE-2,Female,Day scholar,false,Top 10%,Middle,2024,5,consistent_average
+STU-0135,Lavanya Gupta,24IT028,Information Technology,IT,A,FAC-IT-4,Female,Hostel,false,Top 50%,Lower-middle,2024,5,chronic_backlog
+STU-0136,Varun Thakur,24CSE042,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 10%,Low,2024,5,consistent_average
+STU-0137,Om Pillai,24MEC018,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0138,Siddharth Das,24IT029,Information Technology,IT,B,FAC-IT-1,Male,Day scholar,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0139,Aanya Deshmukh,24ECE039,Electronics,ECE,C,FAC-ECE-3,Female,Day scholar,false,Top 25%,Middle,2024,5,sudden_drop
+STU-0140,Riya Menon,24MEC019,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Hostel,false,Top 50%,Lower-middle,2024,5,sudden_drop
+STU-0141,Dhruv Arora,24IT030,Information Technology,IT,C,FAC-IT-2,Male,Hostel,true,Top 25%,Middle,2024,5,consistent_average
+STU-0142,Naman Arora,24CSE043,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,true,Top 25%,Low,2024,5,consistent_average
+STU-0143,Esha Nair,24CSE044,Computer Science,CSE,D,FAC-CSE-2,Female,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0144,Lakshya Yadav,24IT031,Information Technology,IT,A,FAC-IT-3,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0145,Dev Shah,24CIV012,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0146,Zaid Arora,24CSE045,Computer Science,CSE,A,FAC-CSE-3,Male,Hostel,true,Top 25%,High,2024,5,chronic_backlog
+STU-0147,Vaidehi Bose,24IT032,Information Technology,IT,B,FAC-IT-4,Female,Hostel,true,Top 10%,High,2024,5,consistent_average
+STU-0148,Siddharth Arora,24MEC020,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Hostel,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0149,Harsh Kaur,24CSE046,Computer Science,CSE,B,FAC-CSE-4,Male,Day scholar,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0150,Vihaan Gupta,24CSE047,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,true,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0151,Divya Mehta,24CSE048,Computer Science,CSE,D,FAC-CSE-6,Female,Hostel,false,,Lower-middle,2024,5,consistent_average
+STU-0152,Aanya Thakur,24CIV013,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Hostel,true,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0153,Kavya Bhatt,24IT033,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,true,Top 25%,Low,2024,5,consistent_average
+STU-0154,Rajat Kapoor,24CSE049,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,false,Bottom 50%,Low,2024,5,chronic_backlog
+STU-0155,Rahul Saxena,24MEC021,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 50%,,2024,5,consistent_average
+STU-0156,Isha Naik,24CIV014,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Female,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0157,Yash Reddy,24CSE050,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0158,Radhika Deshmukh,24CIV015,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0159,Sanya Naik,24ECE040,Electronics,ECE,A,FAC-ECE-4,Female,Hostel,false,Top 25%,Lower-middle,2024,5,sudden_drop
+STU-0160,Karan Ghosh,24CSE051,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0161,Dev Agarwal,24IT034,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,false,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0162,Rishi Naik,24IT035,Information Technology,IT,B,FAC-IT-3,Male,Day scholar,true,Top 25%,High,2024,5,consistent_average
+STU-0163,Dev Jain,24MEC022,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Day scholar,false,Top 25%,Middle,2024,5,sudden_drop
+STU-0164,Kabir Bose,24IT036,Information Technology,IT,C,FAC-IT-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0165,Lakshya Kaur,24ECE041,Electronics,ECE,B,FAC-ECE-1,Male,Day scholar,true,Top 10%,High,2024,5,skilled_poor_attendance
+STU-0166,Kunal Agarwal,24ECE042,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,true,Top 10%,Middle,2024,5,high_achiever
+STU-0167,Meera Saxena,24IT037,Information Technology,IT,A,FAC-IT-1,Female,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0168,Ananya Gupta,24CSE052,Computer Science,CSE,D,FAC-CSE-4,Female,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0169,Tara Mehta,24IT038,Information Technology,IT,B,FAC-IT-2,Female,Day scholar,false,Top 25%,Low,2024,5,high_achiever
+STU-0170,Dhruv Mishra,24ECE043,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0171,Mohit Mishra,24CIV016,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0172,Aditi Shah,24ECE044,Electronics,ECE,B,FAC-ECE-4,Female,Hostel,true,Top 10%,Middle,2024,5,high_achiever
+STU-0173,Ishita Sharma,24ECE045,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0174,Shruti Sinha,24CSE053,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0175,Charvi Agarwal,24CSE054,Computer Science,CSE,B,FAC-CSE-6,Female,Day scholar,true,Top 25%,Middle,2024,5,slow_decliner
+STU-0176,Kunal Patel,24MEC023,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0177,Harsh Saxena,24CIV017,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Hostel,true,Top 50%,,2024,5,consistent_average
+STU-0178,Rajat Thakur,24MEC024,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Top 50%,Low,2024,5,consistent_average
+STU-0179,Isha Shah,24CSE055,Computer Science,CSE,C,FAC-CSE-1,Female,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0180,Rohan Malhotra,24CSE056,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,false,Top 25%,Low,2024,5,high_cgpa_low_placement
+STU-0181,Gauri Ghosh,24CIV018,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,true,Bottom 50%,High,2024,5,consistent_average
+STU-0182,Isha Agarwal,24IT039,Information Technology,IT,C,FAC-IT-3,Female,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0183,Anika Jain,24IT040,Information Technology,IT,A,FAC-IT-4,Female,Hostel,false,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0184,Arjun Desai,24CSE057,Computer Science,CSE,A,FAC-CSE-3,Male,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0185,Anika Ghosh,24CSE058,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,false,Top 25%,Middle,2024,5,skilled_poor_attendance
+STU-0186,Charvi Desai,24ECE046,Electronics,ECE,A,FAC-ECE-2,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0187,Nidhi Mishra,24CIV019,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Day scholar,false,Top 50%,Low,2024,5,skilled_poor_attendance
+STU-0188,Yash Kapoor,24IT041,Information Technology,IT,B,FAC-IT-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0189,Aarav Tiwari,24CIV020,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Day scholar,false,,Middle,2024,5,consistent_average
+STU-0190,Karan Pillai,24ECE047,Electronics,ECE,B,FAC-ECE-3,Male,Hostel,false,Top 25%,Lower-middle,2024,5,chronic_backlog
+STU-0191,Kavya Banerjee,24CSE059,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Top 25%,High,2024,5,consistent_average
+STU-0192,Vihaan Banerjee,24MEC025,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0193,Gauri Naik,24CSE060,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,false,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0194,Kabir Agarwal,24CSE061,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,true,Top 10%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0195,Pranav Kulkarni,24IT042,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,false,,Lower-middle,2024,5,chronic_backlog
+STU-0196,Eshan Pillai,24CSE062,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0197,Vihaan Kapoor,24CIV021,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Hostel,true,Top 10%,Middle,2024,5,high_achiever
+STU-0198,Charvi Jain,24IT043,Information Technology,IT,A,FAC-IT-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0199,Siddharth Deshmukh,24CSE063,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,disengaged_capable
+STU-0200,Diya Bajaj,24ECE048,Electronics,ECE,C,FAC-ECE-4,Female,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0201,Gaurav Kaur,24MEC026,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0202,Naman Kaur,24ECE049,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,true,Top 25%,High,2024,5,consistent_average
+STU-0203,Nidhi Nair,24IT044,Information Technology,IT,B,FAC-IT-4,Female,Hostel,false,Top 50%,Lower-middle,2024,5,disengaged_capable
+STU-0204,Aditi Khan,24CIV022,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0205,Vivek Khan,24CSE064,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0206,Aarav Khan,24CSE065,Computer Science,CSE,A,FAC-CSE-5,Male,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0207,Varun Bhatt,24ECE050,Electronics,ECE,B,FAC-ECE-2,Male,Hostel,true,Top 25%,High,2024,5,consistent_average
+STU-0208,Bhavesh Gupta,24CSE066,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0209,Harsh Thakur,24CSE067,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,false,Top 25%,High,2024,5,consistent_average
+STU-0210,Aditi Bajaj,24CSE068,Computer Science,CSE,D,FAC-CSE-2,Female,Day scholar,false,Top 10%,High,2024,5,high_achiever
+STU-0211,Kunal Chatterjee,24IT045,Information Technology,IT,C,FAC-IT-1,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0212,Aditya Shah,24IT046,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,false,Top 25%,Middle,2024,5,disengaged_capable
+STU-0213,Shruti Bhatt,24CSE069,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Top 50%,,2024,5,disengaged_capable
+STU-0214,Aanya Yadav,24IT047,Information Technology,IT,B,FAC-IT-3,Female,Hostel,false,Top 50%,Low,2024,5,high_achiever
+STU-0215,Rajat Iyer,24IT048,Information Technology,IT,C,FAC-IT-4,Male,Hostel,true,Top 10%,Low,2024,5,late_bloomer
+STU-0216,Arjun Pandey,24ECE051,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0217,Sneha Agarwal,24CSE070,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,false,Top 25%,Low,2024,5,consistent_average
+STU-0218,Dhruv Desai,24CSE071,Computer Science,CSE,C,FAC-CSE-5,Male,Hostel,true,Top 10%,Low,2024,5,disengaged_capable
+STU-0219,Yash Kaur,24ECE052,Electronics,ECE,A,FAC-ECE-4,Male,Day scholar,true,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0220,Ishita Verma,24IT049,Information Technology,IT,A,FAC-IT-1,Female,Hostel,false,Top 25%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0221,Rhea Bhatt,24ECE053,Electronics,ECE,B,FAC-ECE-1,Female,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0222,Kabir Chopra,24IT050,Information Technology,IT,B,FAC-IT-2,Male,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0223,Kabir Arora,24CSE072,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,true,Top 25%,High,2024,5,consistent_average
+STU-0224,Rishi Mehta,24ECE054,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0225,Rohan Desai,24CSE073,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0226,Rahul Desai,24ECE055,Electronics,ECE,A,FAC-ECE-3,Male,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0227,Anika Reddy,24CSE074,Computer Science,CSE,B,FAC-CSE-2,Female,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0228,Naman Singh,24IT051,Information Technology,IT,C,FAC-IT-3,Male,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0229,Ishaan Bose,24MEC027,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0230,Aarav Iyer,24CSE075,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0231,Sneha Iyer,24IT052,Information Technology,IT,A,FAC-IT-4,Female,Hostel,false,Top 50%,Low,2024,5,late_bloomer
+STU-0232,Priya Arora,24IT053,Information Technology,IT,B,FAC-IT-1,Female,Hostel,false,Top 50%,Lower-middle,2024,5,sudden_drop
+STU-0233,Siddharth Ghosh,24IT054,Information Technology,IT,C,FAC-IT-2,Male,Hostel,false,,Lower-middle,2024,5,chronic_backlog
+STU-0234,Aditi Chopra,24IT055,Information Technology,IT,A,FAC-IT-3,Female,Day scholar,false,Top 10%,,2024,5,disengaged_capable
+STU-0235,Sneha Khan,24CIV023,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Female,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0236,Vihaan Agarwal,24CSE076,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0237,Zaid Deshmukh,24ECE056,Electronics,ECE,B,FAC-ECE-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0238,Zoya Iyer,24IT056,Information Technology,IT,B,FAC-IT-4,Female,Hostel,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0239,Harini Jain,24CIV024,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0240,Naman Kulkarni,24ECE057,Electronics,ECE,C,FAC-ECE-1,Male,Day scholar,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0241,Isha Reddy,24MEC028,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Hostel,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0242,Nidhi Gupta,24IT057,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,false,Top 10%,Middle,2024,5,sudden_drop
+STU-0243,Meera Joshi,24CSE077,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Top 10%,High,2024,5,high_achiever
+STU-0244,Rohan Mishra,24IT058,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,true,Top 10%,High,2024,5,disengaged_capable
+STU-0245,Manav Shah,24CSE078,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0246,Aryan Desai,24CIV025,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Hostel,true,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0247,Gauri Gupta,24CSE079,Computer Science,CSE,C,FAC-CSE-1,Female,Day scholar,false,Top 50%,Low,2024,5,skilled_poor_attendance
+STU-0248,Bhavna Patel,24CSE080,Computer Science,CSE,D,FAC-CSE-2,Female,Day scholar,false,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0249,Ishaan Verma,24ECE058,Electronics,ECE,A,FAC-ECE-2,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0250,Pranav Chopra,24CSE081,Computer Science,CSE,A,FAC-CSE-3,Male,Day scholar,false,Top 25%,Middle,2024,5,skilled_poor_attendance
+STU-0251,Jatin Verma,24ECE059,Electronics,ECE,B,FAC-ECE-3,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0252,Karan Bose,24MEC029,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,true,Top 50%,High,2024,5,consistent_average
+STU-0253,Bhavesh Sinha,24CIV026,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0254,Rohan Verma,24IT059,Information Technology,IT,B,FAC-IT-3,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0255,Rajat Nair,24MEC030,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Top 25%,Lower-middle,2024,5,late_bloomer
+STU-0256,Tara Verma,24CIV027,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0257,Lakshya Arora,24IT060,Information Technology,IT,C,FAC-IT-4,Male,Hostel,false,Top 25%,Middle,2024,5,slow_decliner
+STU-0258,Tara Chopra,24IT061,Information Technology,IT,A,FAC-IT-1,Female,Hostel,true,Top 10%,High,2024,5,slow_decliner
+STU-0259,Charvi Nair,24ECE060,Electronics,ECE,C,FAC-ECE-4,Female,Hostel,true,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0260,Aarav Gupta,24CSE082,Computer Science,CSE,B,FAC-CSE-4,Male,Hostel,true,Top 10%,Middle,2024,5,high_achiever
+STU-0261,Zoya Deshmukh,24IT062,Information Technology,IT,B,FAC-IT-2,Female,Day scholar,false,Top 10%,Low,2024,5,disengaged_capable
+STU-0262,Rohan Naik,24IT063,Information Technology,IT,C,FAC-IT-3,Male,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0263,Ishaan Pandey,24ECE061,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,false,Top 25%,Middle,2024,5,disengaged_capable
+STU-0264,Kunal Deshmukh,24MEC031,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Hostel,true,Top 10%,Middle,2024,5,sudden_drop
+STU-0265,Aarav Ghosh,24IT064,Information Technology,IT,A,FAC-IT-4,Male,Hostel,true,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0266,Parth Naik,24CSE083,Computer Science,CSE,C,FAC-CSE-5,Male,Hostel,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0267,Harsh Arora,24CSE084,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,true,Top 25%,High,2024,5,disengaged_capable
+STU-0268,Samarth Iyer,24IT065,Information Technology,IT,B,FAC-IT-1,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0269,Gaurav Naik,24IT066,Information Technology,IT,C,FAC-IT-2,Male,Hostel,false,Top 50%,Middle,2024,5,sudden_drop
+STU-0270,Kriti Pillai,24ECE062,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,false,Top 25%,Low,2024,5,high_achiever
+STU-0271,Nikhil Chopra,24ECE063,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,true,Top 10%,High,2024,5,disengaged_capable
+STU-0272,Aditi Jain,24CSE085,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,false,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0273,Gaurav Desai,24CSE086,Computer Science,CSE,B,FAC-CSE-2,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0274,Sanya Desai,24IT067,Information Technology,IT,A,FAC-IT-3,Female,Hostel,false,Top 50%,High,2024,5,consistent_average
+STU-0275,Rohan Arora,24IT068,Information Technology,IT,B,FAC-IT-4,Male,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0276,Vihaan Menon,24CSE087,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,true,Top 10%,Middle,2024,5,slow_decliner
+STU-0277,Esha Patel,24MEC032,Mechanical Engineering,MECH,B,FAC-MECH-2,Female,Day scholar,false,Top 25%,High,2024,5,high_achiever
+STU-0278,Riya Arora,24MEC033,Mechanical Engineering,MECH,A,FAC-MECH-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0279,Dhruv Bose,24IT069,Information Technology,IT,C,FAC-IT-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0280,Ishita Ghosh,24CSE088,Computer Science,CSE,D,FAC-CSE-4,Female,Day scholar,true,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0281,Vaidehi Desai,24MEC034,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,sudden_drop
+STU-0282,Anika Thakur,24MEC035,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0283,Isha Deshmukh,24IT070,Information Technology,IT,A,FAC-IT-2,Female,Hostel,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0284,Riya Chatterjee,24CSE089,Computer Science,CSE,A,FAC-CSE-5,Female,Day scholar,true,,Middle,2024,5,consistent_average
+STU-0285,Aryan Joshi,24ECE064,Electronics,ECE,A,FAC-ECE-4,Male,Day scholar,false,Bottom 50%,Middle,2024,5,skilled_poor_attendance
+STU-0286,Tejas Deshmukh,24IT071,Information Technology,IT,B,FAC-IT-3,Male,Hostel,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0287,Utkarsh Patel,24CIV028,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,false,Bottom 50%,Low,2024,5,late_bloomer
+STU-0288,Karan Yadav,24CSE090,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,true,Top 10%,Middle,2024,5,sudden_drop
+STU-0289,Naman Banerjee,24CSE091,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0290,Dhruv Shah,24ECE065,Electronics,ECE,B,FAC-ECE-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0291,Arjun Bose,24MEC036,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0292,Priya Chatterjee,24MEC037,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0293,Tushar Kapoor,24CSE092,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0294,Kabir Joshi,24MEC038,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Hostel,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0295,Charvi Malhotra,24CSE093,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0296,Karan Reddy,24MEC039,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 10%,Low,2024,5,disengaged_capable
+STU-0297,Lavanya Mishra,24CSE094,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0298,Yashvi Chopra,24ECE066,Electronics,ECE,C,FAC-ECE-2,Female,Hostel,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0299,Esha Reddy,24CSE095,Computer Science,CSE,C,FAC-CSE-5,Female,Day scholar,false,Top 10%,,2024,5,slow_decliner
+STU-0300,Kavya Saxena,24MEC040,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Day scholar,false,Bottom 50%,Middle,2024,5,disengaged_capable
+STU-0301,Kabir Nair,24CSE096,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0302,Meera Kulkarni,24ECE067,Electronics,ECE,A,FAC-ECE-3,Female,Hostel,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0303,Naman Reddy,24CSE097,Computer Science,CSE,A,FAC-CSE-1,Male,Day scholar,false,Top 50%,High,2024,5,disengaged_capable
+STU-0304,Rajat Joshi,24CSE098,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0305,Arjun Kaur,24ECE068,Electronics,ECE,B,FAC-ECE-4,Male,Hostel,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0306,Om Shah,24CSE099,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,false,,High,2024,5,slow_decliner
+STU-0307,Pranav Deshmukh,24IT072,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0308,Manav Menon,24CSE100,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,true,Bottom 50%,Low,2024,5,consistent_average
+STU-0309,Aryan Jain,24CSE101,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,true,Top 10%,High,2024,5,disengaged_capable
+STU-0310,Rahul Banerjee,24CSE102,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 50%,High,2024,5,consistent_average
+STU-0311,Priya Chopra,24CSE103,Computer Science,CSE,C,FAC-CSE-1,Female,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0312,Mohit Kulkarni,24IT073,Information Technology,IT,A,FAC-IT-1,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0313,Arjun Jain,24CSE104,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0314,Mahika Malhotra,24CSE105,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0315,Priya Agarwal,24CSE106,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0316,Neha Chatterjee,24MEC041,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Day scholar,true,Top 50%,Lower-middle,2024,5,sudden_drop
+STU-0317,Jatin Arora,24IT074,Information Technology,IT,B,FAC-IT-2,Male,Day scholar,false,Top 10%,High,2024,5,consistent_average
+STU-0318,Yash Shah,24IT075,Information Technology,IT,C,FAC-IT-3,Male,Day scholar,true,Top 25%,Low,2024,5,disengaged_capable
+STU-0319,Eshan Thakur,24CSE107,Computer Science,CSE,C,FAC-CSE-5,Male,Hostel,false,Top 50%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0320,Varun Yadav,24ECE069,Electronics,ECE,C,FAC-ECE-1,Male,Hostel,false,Top 10%,Low,2024,5,high_achiever
+STU-0321,Bhavna Jain,24ECE070,Electronics,ECE,A,FAC-ECE-2,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0322,Anika Pillai,24ECE071,Electronics,ECE,B,FAC-ECE-3,Female,Hostel,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0323,Neha Menon,24IT076,Information Technology,IT,A,FAC-IT-4,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,late_bloomer
+STU-0324,Kabir Kulkarni,24ECE072,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,false,Top 50%,,2024,5,consistent_average
+STU-0325,Priya Malhotra,24IT077,Information Technology,IT,B,FAC-IT-1,Female,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0326,Varun Khan,24CIV029,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Day scholar,true,,Lower-middle,2024,5,consistent_average
+STU-0327,Jatin Bhatt,24CSE108,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,false,Bottom 50%,,2024,5,late_bloomer
+STU-0328,Chirag Menon,24IT078,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,false,Top 25%,,2024,5,high_achiever
+STU-0329,Simran Saxena,24CSE109,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0330,Tara Yadav,24CSE110,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0331,Vivek Banerjee,24CSE111,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 50%,Middle,2024,5,high_achiever
+STU-0332,Lakshya Iyer,24CSE112,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0333,Aditya Ghosh,24ECE073,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,false,Top 50%,High,2024,5,skilled_poor_attendance
+STU-0334,Utkarsh Das,24CSE113,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0335,Kavya Joshi,24CSE114,Computer Science,CSE,B,FAC-CSE-6,Female,Hostel,true,Top 10%,Middle,2024,5,skilled_poor_attendance
+STU-0336,Meera Sharma,24CSE115,Computer Science,CSE,C,FAC-CSE-1,Female,Hostel,true,Top 25%,Low,2024,5,disengaged_capable
+STU-0337,Rahul Naik,24CIV030,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0338,Rohan Kapoor,24CIV031,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Day scholar,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0339,Tejas Chatterjee,24ECE074,Electronics,ECE,B,FAC-ECE-2,Male,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0340,Yash Rao,24CIV032,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Day scholar,false,Top 10%,High,2024,5,high_achiever
+STU-0341,Diya Nair,24CSE116,Computer Science,CSE,D,FAC-CSE-2,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0342,Mahika Menon,24ECE075,Electronics,ECE,C,FAC-ECE-3,Female,Hostel,false,Top 25%,Middle,2024,5,consistent_average
+STU-0343,Kunal Sharma,24CSE117,Computer Science,CSE,A,FAC-CSE-3,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,sudden_drop
+STU-0344,Kriti Mishra,24ECE076,Electronics,ECE,A,FAC-ECE-4,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0345,Isha Malhotra,24MEC042,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Day scholar,false,Top 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0346,Kabir Deshmukh,24CSE118,Computer Science,CSE,B,FAC-CSE-4,Male,Hostel,false,Top 25%,Middle,2024,5,consistent_average
+STU-0347,Riya Kaur,24CSE119,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0348,Rishi Bose,24CSE120,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,true,Top 25%,Middle,2024,5,sudden_drop
+STU-0349,Mohit Agarwal,24CIV033,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0350,Vivek Sinha,24CIV034,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0351,Sneha Deshmukh,24CSE121,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,true,Top 10%,High,2024,5,disengaged_capable
+STU-0352,Tushar Bose,24CSE122,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0353,Lavanya Rao,24CSE123,Computer Science,CSE,C,FAC-CSE-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0354,Simran Reddy,24CIV035,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0355,Manav Pandey,24ECE077,Electronics,ECE,B,FAC-ECE-1,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0356,Yashvi Jain,24CIV036,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,sudden_drop
+STU-0357,Om Malhotra,24CSE124,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 50%,Middle,2024,5,slow_decliner
+STU-0358,Jiya Chatterjee,24CSE125,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Bottom 50%,Middle,2024,5,late_bloomer
+STU-0359,Jatin Chopra,24IT079,Information Technology,IT,A,FAC-IT-3,Male,Hostel,false,Top 50%,Low,2024,5,chronic_backlog
+STU-0360,Sneha Chatterjee,24ECE078,Electronics,ECE,C,FAC-ECE-2,Female,Hostel,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0361,Pranav Tiwari,24IT080,Information Technology,IT,B,FAC-IT-4,Male,Hostel,false,Top 25%,Middle,2024,5,sudden_drop
+STU-0362,Meera Tiwari,24CIV037,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0363,Siddharth Sinha,24CSE126,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 25%,Middle,2024,5,slow_decliner
+STU-0364,Vihaan Pillai,24CSE127,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0365,Aarav Joshi,24IT081,Information Technology,IT,C,FAC-IT-1,Male,Day scholar,true,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0366,Gauri Desai,24ECE079,Electronics,ECE,A,FAC-ECE-3,Female,Hostel,false,Top 25%,High,2024,5,high_achiever
+STU-0367,Yash Patel,24CSE128,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,false,Bottom 50%,Middle,2024,5,slow_decliner
+STU-0368,Karan Mehta,24IT082,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0369,Varun Shah,24IT083,Information Technology,IT,B,FAC-IT-3,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0370,Dhruv Tiwari,24ECE080,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0371,Mohit Mehta,24CSE129,Computer Science,CSE,A,FAC-CSE-3,Male,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0372,Rishi Kaur,24ECE081,Electronics,ECE,C,FAC-ECE-1,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0373,Yash Saxena,24IT084,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0374,Aarav Shah,24CSE130,Computer Science,CSE,B,FAC-CSE-4,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,late_bloomer
+STU-0375,Nikhil Pandey,24MEC043,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,true,Bottom 50%,,2024,5,consistent_average
+STU-0376,Ananya Bhatt,24MEC044,Mechanical Engineering,MECH,B,FAC-MECH-2,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0377,Rishi Kulkarni,24IT085,Information Technology,IT,A,FAC-IT-1,Male,Hostel,false,Bottom 50%,,2024,5,chronic_backlog
+STU-0378,Shruti Nair,24CSE131,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Top 25%,Middle,2024,5,skilled_poor_attendance
+STU-0379,Parth Sharma,24ECE082,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0380,Pallavi Banerjee,24IT086,Information Technology,IT,B,FAC-IT-2,Female,Hostel,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0381,Utkarsh Iyer,24ECE083,Electronics,ECE,B,FAC-ECE-3,Male,Hostel,false,Bottom 50%,High,2024,5,skilled_poor_attendance
+STU-0382,Ishaan Singh,24ECE084,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,false,Top 10%,Low,2024,5,disengaged_capable
+STU-0383,Uma Patel,24IT087,Information Technology,IT,C,FAC-IT-3,Female,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0384,Mahika Khan,24CSE132,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,true,Bottom 50%,Lower-middle,2024,5,slow_decliner
+STU-0385,Vaidehi Mehta,24CSE133,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,false,Top 25%,Low,2024,5,consistent_average
+STU-0386,Zaid Kulkarni,24CSE134,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 25%,Middle,2024,5,slow_decliner
+STU-0387,Rajat Desai,24IT088,Information Technology,IT,A,FAC-IT-4,Male,Hostel,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0388,Tejas Nair,24IT089,Information Technology,IT,B,FAC-IT-1,Male,Hostel,true,Top 10%,Middle,2024,5,consistent_average
+STU-0389,Jatin Kapoor,24MEC045,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0390,Zaid Bhatt,24CSE135,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 50%,Low,2024,5,consistent_average
+STU-0391,Nikhil Arora,24CSE136,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,false,Top 25%,Middle,2024,5,consistent_average
+STU-0392,Sanya Sharma,24MEC046,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0393,Rahul Gupta,24CIV038,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Hostel,false,Top 10%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0394,Jiya Yadav,24MEC047,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Day scholar,true,Top 25%,Low,2024,5,consistent_average
+STU-0395,Kunal Thakur,24CSE137,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0396,Aarav Agarwal,24CIV039,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Day scholar,false,Top 50%,High,2024,5,disengaged_capable
+STU-0397,Vaidehi Kapoor,24IT090,Information Technology,IT,C,FAC-IT-2,Female,Day scholar,true,Top 10%,Low,2024,5,slow_decliner
+STU-0398,Kunal Kaur,24CIV040,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,sudden_drop
+STU-0399,Tanvi Ghosh,24CSE138,Computer Science,CSE,B,FAC-CSE-6,Female,Hostel,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0400,Pallavi Menon,24CSE139,Computer Science,CSE,C,FAC-CSE-1,Female,Hostel,false,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0401,Sanya Deshmukh,24IT091,Information Technology,IT,A,FAC-IT-3,Female,Hostel,false,Top 25%,High,2024,5,high_achiever
+STU-0402,Riya Saxena,24ECE085,Electronics,ECE,A,FAC-ECE-1,Female,Hostel,false,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0403,Varun Patel,24IT092,Information Technology,IT,B,FAC-IT-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,slow_decliner
+STU-0404,Radhika Gupta,24ECE086,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,true,Top 10%,Low,2024,5,high_achiever
+STU-0405,Pallavi Thakur,24MEC048,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Hostel,false,Top 10%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0406,Lavanya Naik,24CIV041,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Female,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0407,Eshan Jain,24ECE087,Electronics,ECE,C,FAC-ECE-3,Male,Hostel,false,Top 10%,Middle,2024,5,disengaged_capable
+STU-0408,Gauri Kapoor,24CSE140,Computer Science,CSE,D,FAC-CSE-2,Female,Hostel,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0409,Mahika Rao,24IT093,Information Technology,IT,C,FAC-IT-1,Female,Hostel,false,Top 10%,,2024,5,disengaged_capable
+STU-0410,Charvi Arora,24MEC049,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Day scholar,true,Top 25%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0411,Tara Agarwal,24CSE141,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0412,Lavanya Tiwari,24ECE088,Electronics,ECE,A,FAC-ECE-4,Female,Day scholar,false,Top 50%,Low,2024,5,slow_decliner
+STU-0413,Chirag Ghosh,24ECE089,Electronics,ECE,B,FAC-ECE-1,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0414,Bhavesh Mishra,24IT094,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0415,Lavanya Reddy,24CSE142,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0416,Aditi Das,24CSE143,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Top 50%,,2024,5,disengaged_capable
+STU-0417,Karan Desai,24CSE144,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,false,Top 50%,Low,2024,5,consistent_average
+STU-0418,Vaidehi Mishra,24IT095,Information Technology,IT,B,FAC-IT-3,Female,Day scholar,false,,High,2024,5,slow_decliner
+STU-0419,Tejas Saxena,24ECE090,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0420,Aditi Arora,24CSE145,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,true,,Middle,2024,5,consistent_average
+STU-0421,Rishi Patel,24CSE146,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 10%,Middle,2024,5,sudden_drop
+STU-0422,Lakshya Thakur,24IT096,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0423,Rohan Chatterjee,24MEC050,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Hostel,true,Bottom 50%,Low,2024,5,late_bloomer
+STU-0424,Simran Das,24CSE147,Computer Science,CSE,C,FAC-CSE-3,Female,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0425,Eshan Yadav,24ECE091,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0426,Parth Chopra,24IT097,Information Technology,IT,A,FAC-IT-1,Male,Hostel,false,Top 50%,Middle,2024,5,sudden_drop
+STU-0427,Sneha Das,24MEC051,Mechanical Engineering,MECH,A,FAC-MECH-3,Female,Hostel,true,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0428,Yashvi Sinha,24IT098,Information Technology,IT,B,FAC-IT-2,Female,Day scholar,true,Top 10%,Low,2024,5,disengaged_capable
+STU-0429,Zoya Chatterjee,24CIV042,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Hostel,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0430,Eshan Gupta,24IT099,Information Technology,IT,C,FAC-IT-3,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,late_bloomer
+STU-0431,Charvi Reddy,24IT100,Information Technology,IT,A,FAC-IT-4,Female,Day scholar,false,Bottom 50%,Middle,2024,5,sudden_drop
+STU-0432,Aanya Bajaj,24MEC052,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0433,Harini Sinha,24CSE148,Computer Science,CSE,D,FAC-CSE-4,Female,Hostel,true,Top 10%,Middle,2024,5,consistent_average
+STU-0434,Diya Thakur,24CSE149,Computer Science,CSE,A,FAC-CSE-5,Female,Day scholar,false,Top 10%,High,2024,5,disengaged_capable
+STU-0435,Rajat Reddy,24CSE150,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 25%,Low,2024,5,consistent_average
+STU-0436,Lavanya Bajaj,24MEC053,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Hostel,true,Top 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0437,Naman Nair,24ECE092,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,slow_decliner
+STU-0438,Vaidehi Nair,24ECE093,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0439,Om Pandey,24IT101,Information Technology,IT,B,FAC-IT-1,Male,Day scholar,false,Bottom 50%,Middle,2024,5,late_bloomer
+STU-0440,Gaurav Sharma,24IT102,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0441,Charvi Singh,24IT103,Information Technology,IT,A,FAC-IT-3,Female,Hostel,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0442,Rohan Bose,24CSE151,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0443,Rahul Bhatt,24CIV043,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Hostel,false,Top 50%,High,2024,5,slow_decliner
+STU-0444,Isha Desai,24IT104,Information Technology,IT,B,FAC-IT-4,Female,Day scholar,true,Top 10%,High,2024,5,disengaged_capable
+STU-0445,Samarth Desai,24ECE094,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,true,Top 25%,,2024,5,high_cgpa_low_placement
+STU-0446,Ishaan Yadav,24ECE095,Electronics,ECE,B,FAC-ECE-3,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,slow_decliner
+STU-0447,Vihaan Shah,24ECE096,Electronics,ECE,C,FAC-ECE-4,Male,Day scholar,true,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0448,Zoya Jain,24IT105,Information Technology,IT,C,FAC-IT-1,Female,Hostel,false,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0449,Harsh Iyer,24ECE097,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,false,Top 25%,Low,2024,5,consistent_average
+STU-0450,Varun Jain,24MEC054,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0451,Parth Rao,24CSE152,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,false,Bottom 50%,Low,2024,5,slow_decliner
+STU-0452,Ananya Tiwari,24CIV044,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Female,Hostel,false,Top 10%,Lower-middle,2024,5,slow_decliner
+STU-0453,Harsh Gupta,24ECE098,Electronics,ECE,B,FAC-ECE-2,Male,Hostel,false,Top 50%,High,2024,5,consistent_average
+STU-0454,Arjun Patel,24MEC055,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0455,Karan Das,24MEC056,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0456,Mohit Bose,24IT106,Information Technology,IT,A,FAC-IT-2,Male,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0457,Tejas Joshi,24CSE153,Computer Science,CSE,A,FAC-CSE-3,Male,Day scholar,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0458,Aarav Naik,24ECE099,Electronics,ECE,C,FAC-ECE-3,Male,Hostel,true,Top 10%,Middle,2024,5,slow_decliner
+STU-0459,Sneha Verma,24CSE154,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,Top 25%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0460,Nikhil Pillai,24MEC057,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,disengaged_capable
+STU-0461,Nidhi Pandey,24CSE155,Computer Science,CSE,C,FAC-CSE-5,Female,Day scholar,false,Top 25%,High,2024,5,skilled_poor_attendance
+STU-0462,Mahika Das,24ECE100,Electronics,ECE,A,FAC-ECE-4,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0463,Simran Banerjee,24CSE156,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0464,Pallavi Bajaj,24IT107,Information Technology,IT,B,FAC-IT-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0465,Manav Singh,24ECE101,Electronics,ECE,B,FAC-ECE-1,Male,Hostel,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0466,Ananya Kaur,24IT108,Information Technology,IT,C,FAC-IT-4,Female,Hostel,false,Top 25%,Middle,2024,5,slow_decliner
+STU-0467,Chirag Desai,24CIV045,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0468,Gaurav Verma,24IT109,Information Technology,IT,A,FAC-IT-1,Male,Day scholar,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0469,Pranav Malhotra,24CSE157,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0470,Parth Bhatt,24IT110,Information Technology,IT,B,FAC-IT-2,Male,Hostel,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0471,Vivek Menon,24CSE158,Computer Science,CSE,B,FAC-CSE-2,Male,Day scholar,false,Top 25%,High,2024,5,high_achiever
+STU-0472,Yash Pandey,24CSE159,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0473,Tanvi Nair,24MEC058,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Day scholar,false,Top 10%,High,2024,5,high_achiever
+STU-0474,Chirag Sharma,24CSE160,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0475,Tejas Sinha,24IT111,Information Technology,IT,C,FAC-IT-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,sudden_drop
+STU-0476,Karan Saxena,24CSE161,Computer Science,CSE,A,FAC-CSE-5,Male,Hostel,false,Top 25%,Middle,2024,5,consistent_average
+STU-0477,Kunal Banerjee,24CSE162,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0478,Rajat Deshmukh,24CSE163,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,late_bloomer
+STU-0479,Chirag Bhatt,24IT112,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,true,Top 50%,Middle,2024,5,slow_decliner
+STU-0480,Rhea Deshmukh,24CSE164,Computer Science,CSE,D,FAC-CSE-2,Female,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0481,Anika Sharma,24MEC059,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Hostel,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0482,Chirag Singh,24IT113,Information Technology,IT,B,FAC-IT-1,Male,Hostel,false,Top 10%,Middle,2024,5,consistent_average
+STU-0483,Tanvi Gupta,24CIV046,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Female,Hostel,true,Bottom 50%,Low,2024,5,chronic_backlog
+STU-0484,Om Chopra,24CIV047,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0485,Kavya Kulkarni,24CSE165,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0486,Nikhil Tiwari,24CSE166,Computer Science,CSE,B,FAC-CSE-4,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0487,Dev Desai,24CSE167,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,true,Top 50%,High,2024,5,consistent_average
+STU-0488,Lavanya Sharma,24CIV048,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Hostel,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0489,Jiya Das,24CSE168,Computer Science,CSE,D,FAC-CSE-6,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,slow_decliner
+STU-0490,Tejas Pandey,24ECE102,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,false,Bottom 50%,Middle,2024,5,skilled_poor_attendance
+STU-0491,Mohit Joshi,24ECE103,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0492,Meera Desai,24CSE169,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0493,Aditya Singh,24MEC060,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Day scholar,false,Top 50%,,2024,5,chronic_backlog
+STU-0494,Samarth Chopra,24ECE104,Electronics,ECE,B,FAC-ECE-4,Male,Hostel,false,Top 10%,Middle,2024,5,slow_decliner
+STU-0495,Kriti Joshi,24CSE170,Computer Science,CSE,B,FAC-CSE-2,Female,Hostel,false,Top 25%,Lower-middle,2024,5,chronic_backlog
+STU-0496,Tara Arora,24IT114,Information Technology,IT,C,FAC-IT-2,Female,Day scholar,false,Bottom 50%,High,2024,5,late_bloomer
+STU-0497,Tejas Shah,24IT115,Information Technology,IT,A,FAC-IT-3,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0498,Sanya Saxena,24ECE105,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,false,Bottom 50%,Low,2024,5,skilled_poor_attendance
+STU-0499,Saanvi Saxena,24IT116,Information Technology,IT,B,FAC-IT-4,Female,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0500,Tanvi Sharma,24MEC061,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Day scholar,false,Bottom 50%,Middle,2024,5,chronic_backlog
+STU-0501,Simran Chatterjee,24IT117,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,false,Top 50%,High,2024,5,consistent_average
+STU-0502,Pooja Mehta,24MEC062,Mechanical Engineering,MECH,B,FAC-MECH-2,Female,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0503,Uma Singh,24CSE171,Computer Science,CSE,C,FAC-CSE-3,Female,Hostel,false,Top 25%,High,2024,5,disengaged_capable
+STU-0504,Simran Bajaj,24MEC063,Mechanical Engineering,MECH,A,FAC-MECH-3,Female,Hostel,false,Top 50%,Lower-middle,2024,5,chronic_backlog
+STU-0505,Nikhil Bhatt,24CSE172,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 25%,High,2024,5,disengaged_capable
+STU-0506,Gauri Joshi,24IT118,Information Technology,IT,A,FAC-IT-2,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,slow_decliner
+STU-0507,Dhruv Kapoor,24IT119,Information Technology,IT,B,FAC-IT-3,Male,Hostel,true,Top 10%,High,2024,5,high_achiever
+STU-0508,Meera Pillai,24CIV049,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Hostel,true,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0509,Dev Kulkarni,24ECE106,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,false,Top 50%,High,2024,5,chronic_backlog
+STU-0510,Bhavesh Nair,24CIV050,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Day scholar,true,,High,2024,5,late_bloomer
+STU-0511,Aryan Menon,24IT120,Information Technology,IT,C,FAC-IT-4,Male,Hostel,true,Bottom 50%,Middle,2024,5,late_bloomer
+STU-0512,Eshan Chatterjee,24MEC064,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Hostel,false,,Middle,2024,5,sudden_drop
+STU-0513,Vivek Sharma,24MEC065,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,false,Top 10%,Low,2024,5,slow_decliner
+STU-0514,Rahul Reddy,24ECE107,Electronics,ECE,B,FAC-ECE-3,Male,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0515,Mahika Naik,24CSE173,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0516,Lakshya Pandey,24IT121,Information Technology,IT,A,FAC-IT-1,Male,Hostel,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0517,Kunal Menon,24CSE174,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 10%,Low,2024,5,consistent_average
+STU-0518,Jatin Chatterjee,24ECE108,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,true,Top 25%,,2024,5,consistent_average
+STU-0519,Pranav Yadav,24CSE175,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,false,Top 25%,Middle,2024,5,disengaged_capable
+STU-0520,Manav Joshi,24MEC066,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Bottom 50%,High,2024,5,consistent_average
+STU-0521,Parth Tiwari,24ECE109,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,true,Top 10%,Middle,2024,5,consistent_average
+STU-0522,Dev Rao,24IT122,Information Technology,IT,B,FAC-IT-2,Male,Day scholar,false,Top 50%,Low,2024,5,consistent_average
+STU-0523,Isha Singh,24ECE110,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,false,Top 50%,Low,2024,5,late_bloomer
+STU-0524,Jatin Menon,24MEC067,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,true,Top 25%,Middle,2024,5,sudden_drop
+STU-0525,Sanya Nair,24ECE111,Electronics,ECE,C,FAC-ECE-3,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0526,Lakshya Khan,24IT123,Information Technology,IT,C,FAC-IT-3,Male,Day scholar,true,Top 10%,Low,2024,5,high_achiever
+STU-0527,Eshan Joshi,24MEC068,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0528,Lakshya Das,24IT124,Information Technology,IT,A,FAC-IT-4,Male,Hostel,false,Top 10%,High,2024,5,consistent_average
+STU-0529,Siddharth Kulkarni,24CSE176,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0530,Aryan Agarwal,24ECE112,Electronics,ECE,A,FAC-ECE-4,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0531,Naman Gupta,24IT125,Information Technology,IT,B,FAC-IT-1,Male,Hostel,false,Top 50%,Middle,2024,5,high_achiever
+STU-0532,Radhika Iyer,24ECE113,Electronics,ECE,B,FAC-ECE-1,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0533,Tejas Desai,24ECE114,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,false,Bottom 50%,Middle,2024,5,skilled_poor_attendance
+STU-0534,Parth Yadav,24MEC069,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0535,Esha Khan,24MEC070,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Day scholar,true,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0536,Saanvi Pillai,24CSE177,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Bottom 50%,High,2024,5,chronic_backlog
+STU-0537,Arjun Reddy,24ECE115,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0538,Chirag Khan,24IT126,Information Technology,IT,C,FAC-IT-2,Male,Hostel,false,Top 25%,Low,2024,5,disengaged_capable
+STU-0539,Manav Kaur,24IT127,Information Technology,IT,A,FAC-IT-3,Male,Hostel,true,Bottom 50%,Low,2024,5,late_bloomer
+STU-0540,Aditya Verma,24ECE116,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,false,Top 50%,Low,2024,5,disengaged_capable
+STU-0541,Esha Malhotra,24IT128,Information Technology,IT,B,FAC-IT-4,Female,Day scholar,false,Bottom 50%,Low,2024,5,skilled_poor_attendance
+STU-0542,Jiya Singh,24CIV051,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Day scholar,true,Top 10%,High,2024,5,high_achiever
+STU-0543,Ishita Tiwari,24CSE178,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0544,Siddharth Malhotra,24ECE117,Electronics,ECE,C,FAC-ECE-1,Male,Day scholar,true,Top 10%,,2024,5,high_cgpa_low_placement
+STU-0545,Siddharth Reddy,24CSE179,Computer Science,CSE,C,FAC-CSE-5,Male,Hostel,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0546,Aditya Sharma,24CSE180,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0547,Divya Rao,24CSE181,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,false,Top 25%,High,2024,5,sudden_drop
+STU-0548,Yashvi Agarwal,24CSE182,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0549,Parth Pandey,24IT129,Information Technology,IT,C,FAC-IT-1,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0550,Eshan Das,24ECE118,Electronics,ECE,A,FAC-ECE-2,Male,Hostel,false,Top 50%,Low,2024,5,high_cgpa_low_placement
+STU-0551,Nikhil Bose,24MEC071,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Hostel,false,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0552,Aarav Kaur,24IT130,Information Technology,IT,A,FAC-IT-2,Male,Hostel,true,Top 25%,High,2024,5,late_bloomer
+STU-0553,Kriti Ghosh,24IT131,Information Technology,IT,B,FAC-IT-3,Female,Hostel,false,Top 25%,Middle,2024,5,high_cgpa_low_placement
+STU-0554,Priya Bhatt,24ECE119,Electronics,ECE,B,FAC-ECE-3,Female,Day scholar,true,Top 25%,Middle,2024,5,disengaged_capable
+STU-0555,Gaurav Menon,24MEC072,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0556,Chirag Malhotra,24IT132,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0557,Divya Bose,24IT133,Information Technology,IT,A,FAC-IT-1,Female,Hostel,false,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0558,Kabir Pillai,24MEC073,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Hostel,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0559,Samarth Rao,24MEC074,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0560,Sneha Naik,24ECE120,Electronics,ECE,C,FAC-ECE-4,Female,Hostel,false,Top 50%,High,2024,5,skilled_poor_attendance
+STU-0561,Bhavna Bhatt,24CIV052,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Female,Day scholar,true,Top 10%,Middle,2024,5,slow_decliner
+STU-0562,Ishita Das,24MEC075,Mechanical Engineering,MECH,A,FAC-MECH-3,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0563,Arjun Gupta,24IT134,Information Technology,IT,B,FAC-IT-2,Male,Day scholar,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0564,Siddharth Verma,24CIV053,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Day scholar,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0565,Pranav Bajaj,24MEC076,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0566,Vihaan Arora,24ECE121,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,true,Top 50%,Low,2024,5,slow_decliner
+STU-0567,Kunal Bose,24MEC077,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0568,Gauri Deshmukh,24CIV054,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0569,Neha Yadav,24IT135,Information Technology,IT,C,FAC-IT-3,Female,Day scholar,false,Top 25%,High,2024,5,disengaged_capable
+STU-0570,Dev Bajaj,24IT136,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,false,Top 50%,Middle,2024,5,skilled_poor_attendance
+STU-0571,Gaurav Chatterjee,24MEC078,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Hostel,false,Top 25%,High,2024,5,skilled_poor_attendance
+STU-0572,Yashvi Naik,24IT137,Information Technology,IT,B,FAC-IT-1,Female,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0573,Jatin Patel,24ECE122,Electronics,ECE,B,FAC-ECE-2,Male,Day scholar,false,Top 25%,Low,2024,5,late_bloomer
+STU-0574,Riya Verma,24MEC079,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Hostel,false,Top 10%,Middle,2024,5,disengaged_capable
+STU-0575,Om Bajaj,24CSE183,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,false,Bottom 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0576,Yash Das,24ECE123,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0577,Samarth Khan,24ECE124,Electronics,ECE,A,FAC-ECE-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0578,Rajat Pandey,24MEC080,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Hostel,false,Top 10%,Lower-middle,2024,5,late_bloomer
+STU-0579,Vaidehi Deshmukh,24CSE184,Computer Science,CSE,D,FAC-CSE-4,Female,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0580,Harsh Reddy,24IT138,Information Technology,IT,C,FAC-IT-2,Male,Hostel,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0581,Harsh Kulkarni,24MEC081,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 25%,High,2024,5,sudden_drop
+STU-0582,Priya Menon,24CSE185,Computer Science,CSE,A,FAC-CSE-5,Female,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0583,Jiya Jain,24MEC082,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Hostel,false,Top 10%,High,2024,5,consistent_average
+STU-0584,Pranav Patel,24ECE125,Electronics,ECE,B,FAC-ECE-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,chronic_backlog
+STU-0585,Vaidehi Bhatt,24ECE126,Electronics,ECE,C,FAC-ECE-2,Female,Hostel,true,Top 50%,Low,2024,5,chronic_backlog
+STU-0586,Manav Mehta,24CSE186,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0587,Aarav Arora,24CSE187,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,true,Top 25%,High,2024,5,consistent_average
+STU-0588,Manav Deshmukh,24CIV055,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0589,Tara Chatterjee,24MEC083,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Hostel,true,Bottom 50%,Low,2024,5,chronic_backlog
+STU-0590,Rajat Saxena,24CSE188,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,true,Top 10%,Low,2024,5,consistent_average
+STU-0591,Vaidehi Singh,24CIV056,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Female,Hostel,false,Top 50%,Middle,2024,5,sudden_drop
+STU-0592,Esha Yadav,24CSE189,Computer Science,CSE,A,FAC-CSE-3,Female,Day scholar,true,Top 25%,Low,2024,5,sudden_drop
+STU-0593,Diya Khan,24CSE190,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,Top 25%,Low,2024,5,consistent_average
+STU-0594,Riya Gupta,24MEC084,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0595,Vivek Shah,24IT139,Information Technology,IT,A,FAC-IT-3,Male,Hostel,true,Top 25%,High,2024,5,skilled_poor_attendance
+STU-0596,Dev Chatterjee,24ECE127,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 50%,Middle,2024,5,high_achiever
+STU-0597,Saanvi Agarwal,24ECE128,Electronics,ECE,B,FAC-ECE-4,Female,Day scholar,false,Top 50%,,2024,5,consistent_average
+STU-0598,Kavya Sinha,24CSE191,Computer Science,CSE,C,FAC-CSE-5,Female,Day scholar,true,Top 25%,High,2024,5,late_bloomer
+STU-0599,Vivek Das,24IT140,Information Technology,IT,B,FAC-IT-4,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,disengaged_capable
+STU-0600,Harsh Mishra,24CSE192,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,false,Top 10%,High,2024,5,disengaged_capable
+STU-0601,Rajat Banerjee,24CIV057,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0602,Om Nair,24CSE193,Computer Science,CSE,A,FAC-CSE-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0603,Bhavna Khan,24IT141,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,false,Top 25%,Middle,2024,5,late_bloomer
+STU-0604,Parth Menon,24CIV058,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0605,Uma Pandey,24IT142,Information Technology,IT,A,FAC-IT-2,Female,Hostel,true,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0606,Riya Chopra,24CIV059,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Female,Day scholar,true,Top 25%,Low,2024,5,skilled_poor_attendance
+STU-0607,Ananya Saxena,24ECE129,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0608,Divya Yadav,24IT143,Information Technology,IT,B,FAC-IT-3,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0609,Anika Bajaj,24CSE194,Computer Science,CSE,B,FAC-CSE-2,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0610,Isha Kapoor,24ECE130,Electronics,ECE,A,FAC-ECE-2,Female,Hostel,false,Top 10%,Middle,2024,5,disengaged_capable
+STU-0611,Harini Pillai,24ECE131,Electronics,ECE,B,FAC-ECE-3,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0612,Pooja Bajaj,24CSE195,Computer Science,CSE,C,FAC-CSE-3,Female,Day scholar,true,Top 10%,Lower-middle,2024,5,sudden_drop
+STU-0613,Naman Desai,24CSE196,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 50%,Low,2024,5,late_bloomer
+STU-0614,Arjun Khan,24IT144,Information Technology,IT,C,FAC-IT-4,Male,Hostel,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0615,Ishaan Ghosh,24IT145,Information Technology,IT,A,FAC-IT-1,Male,Day scholar,true,Top 10%,High,2024,5,slow_decliner
+STU-0616,Aarav Patel,24CSE197,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Top 50%,Middle,2024,5,slow_decliner
+STU-0617,Isha Menon,24ECE132,Electronics,ECE,C,FAC-ECE-4,Female,Day scholar,true,Top 25%,High,2024,5,disengaged_capable
+STU-0618,Rohan Das,24CSE198,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0619,Samarth Bajaj,24CSE199,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0620,Neha Kaur,24CIV060,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0621,Bhavna Agarwal,24MEC085,Mechanical Engineering,MECH,A,FAC-MECH-1,Female,Day scholar,false,Top 50%,,2024,5,skilled_poor_attendance
+STU-0622,Manav Desai,24IT146,Information Technology,IT,B,FAC-IT-2,Male,Hostel,true,Bottom 50%,,2024,5,skilled_poor_attendance
+STU-0623,Esha Ghosh,24IT147,Information Technology,IT,C,FAC-IT-3,Female,Hostel,false,Top 50%,High,2024,5,consistent_average
+STU-0624,Om Deshmukh,24CSE200,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,true,Top 50%,Low,2024,5,high_achiever
+STU-0625,Aditya Rao,24ECE133,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0626,Simran Shah,24ECE134,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,false,Top 10%,Low,2024,5,late_bloomer
+STU-0627,Harsh Khan,24CSE201,Computer Science,CSE,A,FAC-CSE-3,Male,Day scholar,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0628,Utkarsh Kaur,24ECE135,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0629,Dhruv Das,24IT148,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,false,Top 50%,High,2024,5,slow_decliner
+STU-0630,Rohan Patel,24ECE136,Electronics,ECE,A,FAC-ECE-4,Male,Day scholar,false,Top 25%,Low,2024,5,skilled_poor_attendance
+STU-0631,Yashvi Yadav,24ECE137,Electronics,ECE,B,FAC-ECE-1,Female,Day scholar,false,Top 10%,Middle,2024,5,disengaged_capable
+STU-0632,Nikhil Gupta,24MEC086,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,true,Top 10%,Low,2024,5,disengaged_capable
+STU-0633,Bhavna Arora,24CSE202,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,true,Top 10%,High,2024,5,disengaged_capable
+STU-0634,Utkarsh Sharma,24CSE203,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,false,Top 50%,Low,2024,5,chronic_backlog
+STU-0635,Aanya Chopra,24ECE138,Electronics,ECE,C,FAC-ECE-2,Female,Day scholar,true,Top 10%,Middle,2024,5,skilled_poor_attendance
+STU-0636,Aditi Deshmukh,24CSE204,Computer Science,CSE,D,FAC-CSE-6,Female,Hostel,false,Top 10%,High,2024,5,skilled_poor_attendance
+STU-0637,Nidhi Ghosh,24IT149,Information Technology,IT,B,FAC-IT-1,Female,Day scholar,false,Top 50%,Middle,2024,5,skilled_poor_attendance
+STU-0638,Diya Chatterjee,24CSE205,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0639,Aarav Pillai,24ECE139,Electronics,ECE,A,FAC-ECE-3,Male,Day scholar,false,Top 50%,High,2024,5,high_cgpa_low_placement
+STU-0640,Riya Banerjee,24IT150,Information Technology,IT,C,FAC-IT-2,Female,Day scholar,false,Bottom 50%,Middle,2024,5,disengaged_capable
+STU-0641,Simran Verma,24CSE206,Computer Science,CSE,B,FAC-CSE-2,Female,Hostel,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0642,Aarav Verma,24MEC087,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,false,Top 50%,Low,2024,5,skilled_poor_attendance
+STU-0643,Tejas Bajaj,24CSE207,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,false,,Lower-middle,2024,5,high_achiever
+STU-0644,Rahul Joshi,24CSE208,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,true,Top 10%,Middle,2024,5,consistent_average
+STU-0645,Ishita Khan,24CSE209,Computer Science,CSE,A,FAC-CSE-5,Female,Hostel,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0646,Karan Deshmukh,24CSE210,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 25%,High,2024,5,consistent_average
+STU-0647,Lakshya Sinha,24ECE140,Electronics,ECE,B,FAC-ECE-4,Male,Hostel,false,Bottom 50%,High,2024,5,consistent_average
+STU-0648,Sneha Chopra,24IT151,Information Technology,IT,A,FAC-IT-3,Female,Day scholar,false,Bottom 50%,Middle,2024,5,high_cgpa_low_placement
+STU-0649,Karan Agarwal,24MEC088,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0650,Chirag Das,24ECE141,Electronics,ECE,C,FAC-ECE-1,Male,Hostel,true,Top 25%,Middle,2024,5,high_achiever
+STU-0651,Sneha Yadav,24MEC089,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Day scholar,false,Top 25%,Middle,2024,5,skilled_poor_attendance
+STU-0652,Rohan Deshmukh,24IT152,Information Technology,IT,B,FAC-IT-4,Male,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0653,Aryan Gupta,24CIV061,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Hostel,false,Top 25%,Lower-middle,2024,5,late_bloomer
+STU-0654,Tushar Khan,24IT153,Information Technology,IT,C,FAC-IT-1,Male,Hostel,true,Top 25%,Lower-middle,2024,5,slow_decliner
+STU-0655,Aarav Sinha,24MEC090,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0656,Manav Agarwal,24MEC091,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Hostel,true,Top 10%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0657,Rhea Pillai,24CSE211,Computer Science,CSE,C,FAC-CSE-1,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0658,Divya Naik,24ECE142,Electronics,ECE,A,FAC-ECE-2,Female,Hostel,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0659,Utkarsh Pandey,24ECE143,Electronics,ECE,B,FAC-ECE-3,Male,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0660,Bhavesh Desai,24CSE212,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0661,Lakshya Kulkarni,24MEC092,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0662,Nidhi Das,24ECE144,Electronics,ECE,C,FAC-ECE-4,Female,Day scholar,false,Bottom 50%,High,2024,5,chronic_backlog
+STU-0663,Zoya Saxena,24CSE213,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0664,Pranav Agarwal,24CIV062,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Male,Day scholar,false,Top 50%,Middle,2024,5,sudden_drop
+STU-0665,Riya Naik,24MEC093,Mechanical Engineering,MECH,A,FAC-MECH-3,Female,Hostel,false,,Middle,2024,5,high_achiever
+STU-0666,Rhea Patel,24CSE214,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,,Lower-middle,2024,5,skilled_poor_attendance
+STU-0667,Isha Gupta,24MEC094,Mechanical Engineering,MECH,B,FAC-MECH-1,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,disengaged_capable
+STU-0668,Tejas Kaur,24ECE145,Electronics,ECE,A,FAC-ECE-1,Male,Hostel,false,Bottom 50%,Middle,2024,5,high_achiever
+STU-0669,Aarav Deshmukh,24CIV063,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Male,Day scholar,false,Top 25%,Middle,2024,5,high_achiever
+STU-0670,Parth Deshmukh,24CSE215,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0671,Aanya Mehta,24IT154,Information Technology,IT,A,FAC-IT-2,Female,Hostel,false,Top 25%,High,2024,5,consistent_average
+STU-0672,Ananya Banerjee,24CSE216,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,true,Top 25%,Lower-middle,2024,5,high_achiever
+STU-0673,Rishi Pandey,24IT155,Information Technology,IT,B,FAC-IT-3,Male,Hostel,true,Top 10%,Middle,2024,5,sudden_drop
+STU-0674,Pooja Patel,24CSE217,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0675,Charvi Kapoor,24ECE146,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,false,Top 25%,High,2024,5,disengaged_capable
+STU-0676,Lakshya Sharma,24IT156,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,false,Top 25%,High,2024,5,slow_decliner
+STU-0677,Ishita Saxena,24CSE218,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0678,Bhavna Yadav,24IT157,Information Technology,IT,A,FAC-IT-1,Female,Hostel,false,Top 50%,Middle,2024,5,late_bloomer
+STU-0679,Jatin Naik,24ECE147,Electronics,ECE,C,FAC-ECE-3,Male,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0680,Zaid Menon,24CSE219,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,false,Top 10%,High,2024,5,consistent_average
+STU-0681,Yash Desai,24IT158,Information Technology,IT,B,FAC-IT-2,Male,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0682,Dev Malhotra,24CSE220,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,false,Bottom 50%,High,2024,5,consistent_average
+STU-0683,Bhavna Verma,24MEC095,Mechanical Engineering,MECH,A,FAC-MECH-2,Female,Day scholar,true,Top 25%,High,2024,5,high_cgpa_low_placement
+STU-0684,Uma Desai,24CIV064,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Female,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0685,Rajat Bajaj,24CSE221,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,false,Top 50%,,2024,5,consistent_average
+STU-0686,Varun Kapoor,24CSE222,Computer Science,CSE,B,FAC-CSE-6,Male,Hostel,false,Top 50%,,2024,5,consistent_average
+STU-0687,Aditi Kulkarni,24IT159,Information Technology,IT,C,FAC-IT-3,Female,Day scholar,true,Top 10%,Middle,2024,5,high_achiever
+STU-0688,Parth Malhotra,24MEC096,Mechanical Engineering,MECH,B,FAC-MECH-3,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0689,Rishi Jain,24MEC097,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Day scholar,true,Top 50%,Low,2024,5,disengaged_capable
+STU-0690,Simran Mehta,24ECE148,Electronics,ECE,A,FAC-ECE-4,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0691,Zaid Pillai,24IT160,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0692,Aryan Kaur,24CSE223,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0693,Karan Kulkarni,24MEC098,Mechanical Engineering,MECH,B,FAC-MECH-2,Male,Day scholar,false,,Lower-middle,2024,5,consistent_average
+STU-0694,Harini Menon,24ECE149,Electronics,ECE,B,FAC-ECE-1,Female,Hostel,false,Top 25%,High,2024,5,late_bloomer
+STU-0695,Arjun Arora,24CSE224,Computer Science,CSE,D,FAC-CSE-2,Male,Day scholar,false,,Lower-middle,2024,5,chronic_backlog
+STU-0696,Lavanya Kaur,24CSE225,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0697,Yash Pillai,24ECE150,Electronics,ECE,C,FAC-ECE-2,Male,Day scholar,false,Top 10%,High,2024,5,skilled_poor_attendance
+STU-0698,Meera Gupta,24CSE226,Computer Science,CSE,B,FAC-CSE-4,Female,Hostel,false,Top 50%,Middle,2024,5,consistent_average
+STU-0699,Aditya Joshi,24CSE227,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0700,Aditi Menon,24CSE228,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,false,Top 50%,,2024,5,late_bloomer
+STU-0701,Gaurav Saxena,24MEC099,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Hostel,true,Top 10%,High,2024,5,late_bloomer
+STU-0702,Nikhil Chatterjee,24MEC100,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Day scholar,false,Top 50%,High,2024,5,sudden_drop
+STU-0703,Ishita Chatterjee,24IT161,Information Technology,IT,B,FAC-IT-1,Female,Hostel,false,Top 50%,High,2024,5,disengaged_capable
+STU-0704,Aryan Bajaj,24CSE229,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,true,Top 10%,Low,2024,5,disengaged_capable
+STU-0705,Diya Agarwal,24ECE151,Electronics,ECE,A,FAC-ECE-3,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,chronic_backlog
+STU-0706,Siddharth Bose,24ECE152,Electronics,ECE,B,FAC-ECE-4,Male,Day scholar,false,Top 25%,High,2024,5,late_bloomer
+STU-0707,Harsh Pillai,24MEC101,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,false,Top 50%,High,2024,5,late_bloomer
+STU-0708,Nikhil Jain,24CIV065,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Hostel,false,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0709,Eshan Tiwari,24CSE230,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 10%,Low,2024,5,consistent_average
+STU-0710,Tushar Chatterjee,24ECE153,Electronics,ECE,C,FAC-ECE-1,Male,Day scholar,false,Top 10%,Middle,2024,5,high_achiever
+STU-0711,Lavanya Desai,24ECE154,Electronics,ECE,A,FAC-ECE-2,Female,Hostel,false,Bottom 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0712,Samarth Nair,24CSE231,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,true,Top 10%,Middle,2024,5,high_cgpa_low_placement
+STU-0713,Samarth Bhatt,24ECE155,Electronics,ECE,B,FAC-ECE-3,Male,Day scholar,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0714,Ishaan Jain,24IT162,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0715,Vivek Ghosh,24IT163,Information Technology,IT,A,FAC-IT-3,Male,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0716,Aarav Bhatt,24ECE156,Electronics,ECE,C,FAC-ECE-4,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0717,Ananya Chatterjee,24CIV066,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Day scholar,false,,Lower-middle,2024,5,high_cgpa_low_placement
+STU-0718,Priya Jain,24MEC102,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Hostel,false,Top 25%,,2024,5,late_bloomer
+STU-0719,Bhavesh Bose,24CIV067,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Male,Day scholar,false,Top 25%,Low,2024,5,high_cgpa_low_placement
+STU-0720,Siddharth Bhatt,24CSE232,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Bottom 50%,Lower-middle,2024,5,late_bloomer
+STU-0721,Kunal Ghosh,24IT164,Information Technology,IT,B,FAC-IT-4,Male,Day scholar,false,Top 50%,Low,2024,5,slow_decliner
+STU-0722,Tejas Tiwari,24ECE157,Electronics,ECE,A,FAC-ECE-1,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0723,Nidhi Thakur,24CSE233,Computer Science,CSE,A,FAC-CSE-5,Female,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0724,Vivek Thakur,24IT165,Information Technology,IT,C,FAC-IT-1,Male,Hostel,false,Bottom 50%,,2024,5,sudden_drop
+STU-0725,Om Bhatt,24CSE234,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 10%,Low,2024,5,disengaged_capable
+STU-0726,Tushar Reddy,24CSE235,Computer Science,CSE,C,FAC-CSE-1,Male,Day scholar,false,Bottom 50%,Low,2024,5,consistent_average
+STU-0727,Ananya Nair,24CSE236,Computer Science,CSE,D,FAC-CSE-2,Female,Hostel,true,Top 10%,Low,2024,5,high_cgpa_low_placement
+STU-0728,Zoya Kulkarni,24CSE237,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Top 25%,Lower-middle,2024,5,sudden_drop
+STU-0729,Aditya Kaur,24MEC103,Mechanical Engineering,MECH,A,FAC-MECH-1,Male,Hostel,true,Top 50%,Low,2024,5,sudden_drop
+STU-0730,Diya Iyer,24ECE158,Electronics,ECE,B,FAC-ECE-2,Female,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0731,Pooja Khan,24CSE238,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,false,Top 50%,Middle,2024,5,high_achiever
+STU-0732,Aditi Malhotra,24ECE159,Electronics,ECE,C,FAC-ECE-3,Female,Hostel,false,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0733,Vivek Tiwari,24ECE160,Electronics,ECE,A,FAC-ECE-4,Male,Hostel,false,Top 10%,High,2024,5,high_achiever
+STU-0734,Neha Pandey,24CSE239,Computer Science,CSE,C,FAC-CSE-5,Female,Hostel,false,Top 25%,High,2024,5,late_bloomer
+STU-0735,Tushar Verma,24CSE240,Computer Science,CSE,D,FAC-CSE-6,Male,Day scholar,false,Top 25%,High,2024,5,consistent_average
+STU-0736,Aanya Patel,24CIV068,Civil Engineering,CIVIL,B,FAC-CIVIL-2,Female,Day scholar,true,Top 10%,Lower-middle,2024,5,consistent_average
+STU-0737,Riya Pillai,24CIV069,Civil Engineering,CIVIL,A,FAC-CIVIL-3,Female,Hostel,true,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0738,Sanya Pandey,24CSE241,Computer Science,CSE,A,FAC-CSE-1,Female,Day scholar,true,Top 25%,Middle,2024,5,consistent_average
+STU-0739,Nidhi Bose,24CSE242,Computer Science,CSE,B,FAC-CSE-2,Female,Day scholar,true,Top 25%,High,2024,5,consistent_average
+STU-0740,Vivek Kapoor,24ECE161,Electronics,ECE,B,FAC-ECE-1,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0741,Karan Patel,24CSE243,Computer Science,CSE,C,FAC-CSE-3,Male,Hostel,true,Top 10%,High,2024,5,disengaged_capable
+STU-0742,Priya Pandey,24IT166,Information Technology,IT,A,FAC-IT-2,Female,Day scholar,false,Top 50%,Middle,2024,5,consistent_average
+STU-0743,Om Naik,24CSE244,Computer Science,CSE,D,FAC-CSE-4,Male,Hostel,false,Top 50%,High,2024,5,sudden_drop
+STU-0744,Harsh Jain,24CSE245,Computer Science,CSE,A,FAC-CSE-5,Male,Day scholar,true,Top 50%,Low,2024,5,consistent_average
+STU-0745,Rahul Khan,24CSE246,Computer Science,CSE,B,FAC-CSE-6,Male,Day scholar,false,Top 25%,Middle,2024,5,chronic_backlog
+STU-0746,Parth Kapoor,24CSE247,Computer Science,CSE,C,FAC-CSE-1,Male,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0747,Dhruv Joshi,24CIV070,Civil Engineering,CIVIL,B,FAC-CIVIL-1,Male,Day scholar,false,Top 10%,Low,2024,5,high_achiever
+STU-0748,Nikhil Joshi,24CIV071,Civil Engineering,CIVIL,A,FAC-CIVIL-2,Male,Day scholar,false,Top 25%,High,2024,5,consistent_average
+STU-0749,Neha Joshi,24IT167,Information Technology,IT,B,FAC-IT-3,Female,Day scholar,false,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0750,Priya Ghosh,24CIV072,Civil Engineering,CIVIL,B,FAC-CIVIL-3,Female,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0751,Mohit Yadav,24ECE162,Electronics,ECE,C,FAC-ECE-2,Male,Day scholar,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0752,Tejas Mehta,24CSE248,Computer Science,CSE,D,FAC-CSE-2,Male,Hostel,false,Top 10%,Lower-middle,2024,5,slow_decliner
+STU-0753,Kunal Malhotra,24ECE163,Electronics,ECE,A,FAC-ECE-3,Male,Hostel,false,Top 10%,Lower-middle,2024,5,high_achiever
+STU-0754,Neha Agarwal,24CSE249,Computer Science,CSE,A,FAC-CSE-3,Female,Hostel,false,Top 10%,Middle,2024,5,high_achiever
+STU-0755,Tanvi Kulkarni,24MEC104,Mechanical Engineering,MECH,B,FAC-MECH-2,Female,Day scholar,false,Top 50%,Middle,2024,5,disengaged_capable
+STU-0756,Aditi Saxena,24CSE250,Computer Science,CSE,B,FAC-CSE-4,Female,Day scholar,true,Bottom 50%,Low,2024,5,chronic_backlog
+STU-0757,Utkarsh Desai,24IT168,Information Technology,IT,C,FAC-IT-4,Male,Day scholar,true,Top 10%,,2024,5,slow_decliner
+STU-0758,Chirag Reddy,24CSE251,Computer Science,CSE,C,FAC-CSE-5,Male,Hostel,false,Top 50%,Middle,2024,5,chronic_backlog
+STU-0759,Nidhi Kapoor,24ECE164,Electronics,ECE,B,FAC-ECE-4,Female,Hostel,false,Top 10%,Lower-middle,2024,5,sudden_drop
+STU-0760,Ishita Joshi,24ECE165,Electronics,ECE,C,FAC-ECE-1,Female,Day scholar,true,Top 10%,Low,2024,5,consistent_average
+STU-0761,Manav Saxena,24IT169,Information Technology,IT,A,FAC-IT-1,Male,Hostel,false,Top 10%,High,2024,5,consistent_average
+STU-0762,Samarth Pillai,24ECE166,Electronics,ECE,A,FAC-ECE-2,Male,Day scholar,false,Top 25%,Middle,2024,5,consistent_average
+STU-0763,Ananya Shah,24CSE252,Computer Science,CSE,D,FAC-CSE-6,Female,Day scholar,true,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0764,Saanvi Sharma,24CIV073,Civil Engineering,CIVIL,A,FAC-CIVIL-1,Female,Day scholar,false,Top 10%,High,2024,5,high_achiever
+STU-0765,Uma Jain,24ECE167,Electronics,ECE,B,FAC-ECE-3,Female,Hostel,true,Top 25%,Lower-middle,2024,5,sudden_drop
+STU-0766,Arjun Shah,24MEC105,Mechanical Engineering,MECH,A,FAC-MECH-3,Male,Day scholar,false,Bottom 50%,Middle,2024,5,late_bloomer
+STU-0767,Aditi Joshi,24CSE253,Computer Science,CSE,A,FAC-CSE-1,Female,Hostel,true,Top 10%,Middle,2024,5,high_achiever
+STU-0768,Ishaan Tiwari,24CSE254,Computer Science,CSE,B,FAC-CSE-2,Male,Hostel,false,Top 50%,Middle,2024,5,skilled_poor_attendance
+STU-0769,Karan Gupta,24CSE255,Computer Science,CSE,C,FAC-CSE-3,Male,Day scholar,false,Top 25%,,2024,5,consistent_average
+STU-0770,Gaurav Kapoor,24MEC106,Mechanical Engineering,MECH,B,FAC-MECH-1,Male,Day scholar,true,Top 10%,High,2024,5,slow_decliner
+STU-0771,Om Ghosh,24ECE168,Electronics,ECE,C,FAC-ECE-4,Male,Day scholar,true,Top 10%,Lower-middle,2024,5,disengaged_capable
+STU-0772,Vivek Bhatt,24MEC107,Mechanical Engineering,MECH,A,FAC-MECH-2,Male,Day scholar,false,Top 25%,Low,2024,5,disengaged_capable
+STU-0773,Tushar Thakur,24CSE256,Computer Science,CSE,D,FAC-CSE-4,Male,Day scholar,false,Top 10%,Lower-middle,2024,5,sudden_drop
+STU-0774,Isha Verma,24CSE257,Computer Science,CSE,A,FAC-CSE-5,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,high_achiever
+STU-0775,Gauri Bose,24MEC108,Mechanical Engineering,MECH,B,FAC-MECH-3,Female,Hostel,true,Top 50%,Middle,2024,5,skilled_poor_attendance
+STU-0776,Zoya Sharma,24CSE258,Computer Science,CSE,B,FAC-CSE-6,Female,Day scholar,true,Top 10%,Low,2024,5,consistent_average
+STU-0777,Uma Gupta,24CSE259,Computer Science,CSE,C,FAC-CSE-1,Female,Hostel,false,Top 10%,High,2024,5,high_cgpa_low_placement
+STU-0778,Pooja Joshi,24ECE169,Electronics,ECE,A,FAC-ECE-1,Female,Day scholar,false,Top 25%,Lower-middle,2024,5,consistent_average
+STU-0779,Aditi Nair,24ECE170,Electronics,ECE,B,FAC-ECE-2,Female,Hostel,true,Top 25%,Low,2024,5,chronic_backlog
+STU-0780,Karan Bhatt,24ECE171,Electronics,ECE,C,FAC-ECE-3,Male,Hostel,false,Top 50%,Lower-middle,2024,5,consistent_average
+STU-0781,Jatin Kulkarni,24ECE172,Electronics,ECE,A,FAC-ECE-4,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,skilled_poor_attendance
+STU-0782,Diya Banerjee,24CSE260,Computer Science,CSE,D,FAC-CSE-2,Female,Hostel,false,Top 50%,Lower-middle,2024,5,chronic_backlog
+STU-0783,Rajat Menon,24CSE261,Computer Science,CSE,A,FAC-CSE-3,Male,Hostel,false,Top 10%,High,2024,5,slow_decliner
+STU-0784,Kriti Das,24IT170,Information Technology,IT,B,FAC-IT-2,Female,Hostel,false,Top 25%,Middle,2024,5,high_achiever
+STU-0785,Gaurav Shah,24IT171,Information Technology,IT,C,FAC-IT-3,Male,Hostel,true,Top 25%,High,2024,5,high_cgpa_low_placement
+STU-0786,Aditi Kaur,24ECE173,Electronics,ECE,B,FAC-ECE-1,Female,Day scholar,true,Top 25%,,2024,5,disengaged_capable
+STU-0787,Vivek Bose,24CSE262,Computer Science,CSE,B,FAC-CSE-4,Male,Hostel,false,Top 10%,High,2024,5,consistent_average
+STU-0788,Aryan Nair,24CSE263,Computer Science,CSE,C,FAC-CSE-5,Male,Day scholar,false,Top 10%,Middle,2024,5,consistent_average
+STU-0789,Rohan Bajaj,24ECE174,Electronics,ECE,C,FAC-ECE-2,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,late_bloomer
+STU-0790,Pooja Deshmukh,24ECE175,Electronics,ECE,A,FAC-ECE-3,Female,Day scholar,false,Top 50%,Lower-middle,2024,5,late_bloomer
+STU-0791,Utkarsh Deshmukh,24CSE264,Computer Science,CSE,D,FAC-CSE-6,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,consistent_average
+STU-0792,Chirag Agarwal,24IT172,Information Technology,IT,A,FAC-IT-4,Male,Day scholar,true,Top 10%,Middle,2024,5,disengaged_capable
+STU-0793,Nikhil Mehta,24CSE265,Computer Science,CSE,A,FAC-CSE-1,Male,Hostel,false,Bottom 50%,Lower-middle,2024,5,late_bloomer
+STU-0794,Tushar Yadav,24IT173,Information Technology,IT,B,FAC-IT-1,Male,Hostel,false,Bottom 50%,Middle,2024,5,consistent_average
+STU-0795,Manav Gupta,24IT174,Information Technology,IT,C,FAC-IT-2,Male,Day scholar,false,Top 25%,High,2024,5,consistent_average
+STU-0796,Naman Naik,24IT175,Information Technology,IT,A,FAC-IT-3,Male,Day scholar,false,Top 25%,Low,2024,5,skilled_poor_attendance
+STU-0797,Meera Bhatt,24IT176,Information Technology,IT,B,FAC-IT-4,Female,Hostel,false,Top 25%,Low,2024,5,high_cgpa_low_placement
+STU-0798,Yashvi Bajaj,24IT177,Information Technology,IT,C,FAC-IT-1,Female,Day scholar,false,Top 50%,High,2024,5,consistent_average
+STU-0799,Tara Banerjee,24IT178,Information Technology,IT,A,FAC-IT-2,Female,Hostel,false,Top 10%,Low,2024,5,late_bloomer
+STU-0800,Meera Kapoor,24IT179,Information Technology,IT,B,FAC-IT-3,Female,Day scholar,false,Bottom 50%,Lower-middle,2024,5,consistent_average

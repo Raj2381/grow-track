@@ -1,0 +1,81 @@
+{
+  "changes_per_cutoff": {
+    "as_of_2": {
+      "students.income_band missing -> 'Unknown'": 31,
+      "students.entry_band missing -> 'Unknown'": 19,
+      "semester_results.internal missing -> total - external": 103,
+      "attendance_monthly.lectures_attended > held -> capped at held": 133,
+      "attendance_monthly.lectures_attended missing -> student median ratio x held": 564,
+      "lms_monthly.logins > 3x student median -> capped at 3x median": 33,
+      "lms_monthly.avg_quiz_score missing -> student median": 201,
+      "lms_monthly.hours_online missing -> student median": 164,
+      "assignments.score missing (submitted) -> student median": 428,
+      "coding_attempts.score_percent > 100 -> student median": 1,
+      "coding_attempts.score_percent invalid -> student median": 1,
+      "coding_attempts.time_taken_sec missing -> student median": 27,
+      "interview_attempts.confidence missing -> student median": 0,
+      "skill_assessments.score > 100 -> student median of that skill": 36
+    },
+    "as_of_3": {
+      "students.income_band missing -> 'Unknown'": 31,
+      "students.entry_band missing -> 'Unknown'": 19,
+      "semester_results.internal missing -> total - external": 140,
+      "attendance_monthly.lectures_attended > held -> capped at held": 210,
+      "attendance_monthly.lectures_attended missing -> student median ratio x held": 833,
+      "lms_monthly.logins > 3x student median -> capped at 3x median": 49,
+      "lms_monthly.avg_quiz_score missing -> student median": 313,
+      "lms_monthly.hours_online missing -> student median": 250,
+      "assignments.score missing (submitted) -> student median": 632,
+      "coding_attempts.score_percent > 100 -> student median": 5,
+      "coding_attempts.score_percent invalid -> student median": 5,
+      "coding_attempts.time_taken_sec missing -> student median": 58,
+      "interview_attempts.confidence missing -> student median": 13,
+      "skill_assessments.score > 100 -> student median of that skill": 68
+    },
+    "as_of_4": {
+      "students.income_band missing -> 'Unknown'": 31,
+      "students.entry_band missing -> 'Unknown'": 19,
+      "semester_results.internal missing -> total - external": 176,
+      "attendance_monthly.lectures_attended > held -> capped at held": 272,
+      "attendance_monthly.lectures_attended missing -> student median ratio x held": 1107,
+      "lms_monthly.logins > 3x student median -> capped at 3x median": 65,
+      "lms_monthly.avg_quiz_score missing -> student median": 429,
+      "lms_monthly.hours_online missing -> student median": 325,
+      "assignments.score missing (submitted) -> student median": 859,
+      "coding_attempts.score_percent > 100 -> student median": 8,
+      "coding_attempts.score_percent invalid -> student median": 8,
+      "coding_attempts.time_taken_sec missing -> student median": 84,
+      "interview_attempts.confidence missing -> student median": 28,
+      "skill_assessments.score > 100 -> student median of that skill": 94
+    },
+    "as_of_5": {
+      "students.income_band missing -> 'Unknown'": 31,
+      "students.entry_band missing -> 'Unknown'": 19,
+      "semester_results.internal missing -> total - external": 220,
+      "attendance_monthly.lectures_attended > held -> capped at held": 339,
+      "attendance_monthly.lectures_attended missing -> student median ratio x held": 1429,
+      "lms_monthly.logins > 3x student median -> capped at 3x median": 76,
+      "lms_monthly.avg_quiz_score missing -> student median": 540,
+      "lms_monthly.hours_online missing -> student median": 408,
+      "assignments.score missing (submitted) -> student median": 1061,
+      "coding_attempts.score_percent > 100 -> student median": 9,
+      "coding_attempts.score_percent invalid -> student median": 9,
+      "coding_attempts.time_taken_sec missing -> student median": 111,
+      "interview_attempts.confidence missing -> student median": 47,
+      "skill_assessments.score > 100 -> student median of that skill": 121
+    }
+  },
+  "feature_quality": {
+    "rows": 3200,
+    "missing_rate_after_cleaning": {},
+    "constant_columns": [],
+    "dropped_for_correlation": {
+      "external_avg_last": "|r|=0.955 with sgpa_last",
+      "att_last_two_months": "|r|=0.964 with att_last_sem",
+      "att_lowest_subject": "|r|=0.951 with att_last_sem",
+      "logins_recent": "|r|=0.959 with logins_per_month_last",
+      "aptitude_best": "|r|=0.996 with aptitude_latest",
+      "has_interview": "|r|=0.958 with interview_best"
+    }
+  }
+}
