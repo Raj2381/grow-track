@@ -1,0 +1,1040 @@
+[
+  {
+    "id": "intro-1",
+    "category": "Introduction",
+    "intro": true,
+    "maxMarks": 10,
+    "minWords": 30,
+    "question": "Tell me about yourself, your education, and the kind of role you are looking for.",
+    "mustHaveKeywords": [
+      "education|degree|college|university|studying|student|b tech|engineering",
+      "skills|skill|programming|languages|technologies|python|java|javascript|react|sql|tools",
+      "project|projects|internship|experience|built|developed",
+      "goal|goals|aspire|aspiring|looking for|role|career|position|opportunity"
+    ],
+    "goodToHaveKeywords": [
+      "interest|interested|passionate|passion",
+      "learn|learning|learned",
+      "team|teamwork|collaborate",
+      "achievement|award|hackathon|certification"
+    ],
+    "keyConcepts": [
+      "education|degree|college|university|studying|student",
+      "skills|skill|programming|python|java|javascript|react|sql|technologies",
+      "project|projects|internship|built|developed|experience",
+      "goal|goals|aspire|looking|role|career|position"
+    ],
+    "sampleIdealAnswer": "I am a final-year B.Tech Computer Science student at XYZ College. I am skilled in Python, JavaScript and SQL, and I built a placement-tracking web app as my main project and completed a summer internship. I enjoy learning new technologies and I am looking for a software developer role where I can grow and contribute to real products."
+  },
+  {
+    "id": "intro-2",
+    "category": "Introduction",
+    "intro": true,
+    "maxMarks": 10,
+    "minWords": 30,
+    "question": "Introduce yourself briefly, as you would to an interviewer. What should we know about you?",
+    "mustHaveKeywords": [
+      "education|degree|college|university|studying|student|b tech|engineering",
+      "skills|skill|programming|languages|technologies|python|java|javascript|react|sql|tools",
+      "project|projects|internship|experience|built|developed",
+      "goal|goals|aspire|aspiring|looking for|role|career|position|opportunity"
+    ],
+    "goodToHaveKeywords": [
+      "strength|strengths|hardworking|dedicated",
+      "learn|learning|learned",
+      "team|teamwork|collaborate",
+      "hobby|hobbies|interest|interested"
+    ],
+    "keyConcepts": [
+      "education|degree|college|university|studying|student",
+      "skills|skill|programming|python|java|javascript|react|sql|technologies",
+      "project|projects|internship|built|developed|experience",
+      "goal|goals|aspire|looking|role|career|position"
+    ],
+    "sampleIdealAnswer": "I am a third-year engineering student specialising in information technology. My core skills are Java, SQL and web development, and I have built two projects including an inventory system for a local shop. I learn quickly and work well in teams, and I am looking for an entry-level engineering role to build a strong career."
+  },
+  {
+    "id": "intro-3",
+    "category": "Introduction",
+    "intro": true,
+    "maxMarks": 10,
+    "minWords": 30,
+    "question": "Walk me through your background and what brought you to this field.",
+    "mustHaveKeywords": [
+      "education|degree|college|university|studying|student|b tech|engineering|school",
+      "interest|interested|passion|passionate|inspired|curious|motivated",
+      "skills|skill|programming|languages|technologies|python|java|javascript|react|sql|tools",
+      "project|projects|internship|experience|built|developed",
+      "goal|goals|aspire|aspiring|looking for|role|career|future"
+    ],
+    "goodToHaveKeywords": [
+      "learn|learning|learned",
+      "course|certification|nptel|coursera|bootcamp",
+      "team|collaborate",
+      "grow|growth"
+    ],
+    "keyConcepts": [
+      "education|degree|college|university|studying|student|school",
+      "interest|interested|passion|passionate|inspired|curious|motivated",
+      "skills|skill|programming|python|java|javascript|react|sql|technologies",
+      "goal|goals|aspire|looking|role|career|future"
+    ],
+    "sampleIdealAnswer": "I studied science in school and became interested in computers when I wrote my first program. I am now pursuing a B.Tech in computer science, where I learned Python and web development and built a small project and completed an online course. My goal is to start a career as a software engineer."
+  },
+  {
+    "id": "intro-4",
+    "category": "Introduction",
+    "intro": true,
+    "maxMarks": 10,
+    "minWords": 30,
+    "question": "Give me a short summary of your profile: your studies, your skills, and what you are aiming for.",
+    "mustHaveKeywords": [
+      "studies|study|studying|education|degree|college|university|student|engineering",
+      "skills|skill|programming|languages|technologies|python|java|javascript|react|sql|tools",
+      "project|projects|internship|experience|built|developed",
+      "aim|aiming|goal|goals|aspire|looking for|role|career|position"
+    ],
+    "goodToHaveKeywords": [
+      "strength|strengths|hardworking|dedicated",
+      "learn|learning|learned",
+      "achievement|award|hackathon|certification",
+      "team|collaborate"
+    ],
+    "keyConcepts": [
+      "studies|study|studying|education|degree|college|university|student",
+      "skills|skill|programming|python|java|javascript|react|sql|technologies",
+      "project|projects|internship|built|developed|experience",
+      "aim|aiming|goal|goals|aspire|looking|role|career|position"
+    ],
+    "sampleIdealAnswer": "I am completing my engineering degree in computer science with a strong CGPA. I have skills in Python, SQL and React, and I developed a student management project and a hackathon prototype. I am aiming for a full-stack developer role where I can keep learning."
+  },
+  {
+    "id": "intro-5",
+    "category": "Introduction",
+    "intro": true,
+    "maxMarks": 10,
+    "minWords": 30,
+    "question": "Who are you professionally, and what do you hope to achieve in your first job?",
+    "mustHaveKeywords": [
+      "education|degree|college|university|studying|student|engineering|graduate",
+      "skills|skill|programming|languages|technologies|python|java|javascript|react|sql|tools|strength",
+      "project|projects|internship|experience|built|developed",
+      "achieve|goal|goals|aspire|hope|looking for|role|career|contribute|grow"
+    ],
+    "goodToHaveKeywords": [
+      "learn|learning|learned",
+      "team|collaborate|teamwork",
+      "mentor|mentorship",
+      "impact|value"
+    ],
+    "keyConcepts": [
+      "education|degree|college|university|studying|student|graduate",
+      "skills|skill|programming|python|java|javascript|react|sql|technologies|strength",
+      "project|projects|internship|built|developed|experience",
+      "achieve|goal|goals|aspire|hope|looking|role|career|contribute|grow"
+    ],
+    "sampleIdealAnswer": "I am a recent computer science graduate with skills in Java, databases and web development, and I completed an internship where I built a reporting dashboard. In my first job I want to contribute to a team, learn from experienced engineers and grow into a strong developer."
+  },
+  {
+    "id": "tech-array-linkedlist",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Software Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "question": "Explain the difference between an array and a linked list. When would you use each?",
+    "mustHaveKeywords": [
+      "array",
+      "linked list",
+      "memory|contiguous|storage",
+      "pointer|reference|address|next node",
+      "index|indexing|random access|access",
+      "insertion|insert|deletion|delete|add|remove"
+    ],
+    "goodToHaveKeywords": [
+      "bigo1|constant time",
+      "bigon|linear time|traverse|traversal",
+      "node|nodes",
+      "dynamic|resize|fixed size|size"
+    ],
+    "keyConcepts": [
+      "arrays store elements in contiguous memory",
+      "linked lists connect nodes using pointers|references",
+      "arrays give fast bigo1|constant index|indexed|random access",
+      "linked lists insert|insertion|delete|deletion easily without shifting|moving elements"
+    ],
+    "contradictions": [
+      {
+        "pattern": "linked lists?\\b(?:(?!array|not|no|cannot|without|never|don't|doesn't|isn't|unlike|slow|whereas)[^.]){0,45}\\b(bigo1|constant time)\\b[^.]{0,25}\\b(random|index|direct|access)",
+        "note": "Linked lists do not give O(1) random access; you must traverse from the head, which is O(n)."
+      },
+      {
+        "pattern": "\\b(bigo1|constant time)\\b[^.]{0,15}\\b(random access|indexing|index access)\\b[^.]{0,15}\\b(in|for|with|on)\\s+linked lists?",
+        "note": "Linked lists do not give O(1) random access; you must traverse from the head, which is O(n)."
+      },
+      {
+        "pattern": "\\barrays?\\b(?:(?!linked|list|not|no|unlike|compared|whereas)[^.]){0,45}\\b(bigon|linear time)\\b[^.]{0,20}\\b(random|index|direct)",
+        "note": "Arrays give O(1) access by index, not O(n)."
+      }
+    ],
+    "sampleIdealAnswer": "An array stores elements in contiguous memory, so it gives O(1) random access by index, but inserting or deleting in the middle needs shifting elements and its size is usually fixed. A linked list stores nodes connected by pointers, so insertion and deletion are cheap once you have the node, but reaching an element needs O(n) traversal. Use an array for fast lookups and a linked list for frequent insertions and deletions."
+  },
+  {
+    "id": "tech-stack-queue",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Software Developer",
+      "Backend Developer",
+      "Full Stack Developer",
+      "General Graduate Role"
+    ],
+    "question": "What is the difference between a stack and a queue? Give a real use for each.",
+    "mustHaveKeywords": [
+      "stack",
+      "queue",
+      "lifo|last in first out",
+      "fifo|first in first out",
+      "push|pop",
+      "enqueue|dequeue|front|rear"
+    ],
+    "goodToHaveKeywords": [
+      "undo|browser history|call stack|recursion|backtracking",
+      "printer|ticket|scheduling|bfs|task queue|line",
+      "bigo1|constant time",
+      "top|end|one end"
+    ],
+    "keyConcepts": [
+      "stack is lifo last in first out",
+      "push and pop happen at the top|same|one end",
+      "queue is fifo first in first out",
+      "enqueue at the rear and dequeue from the front"
+    ],
+    "contradictions": [
+      {
+        "pattern": "\\bstacks?\\b(?:(?!queue|not|no|unlike|whereas)[^.]){0,30}\\b(fifo|first in first out)\\b",
+        "note": "A stack is LIFO (last in, first out); a queue is FIFO."
+      },
+      {
+        "pattern": "\\bqueues?\\b(?:(?!stack|not|no|unlike|whereas)[^.]){0,30}\\b(lifo|last in first out)\\b",
+        "note": "A queue is FIFO (first in, first out); a stack is LIFO."
+      }
+    ],
+    "sampleIdealAnswer": "A stack is LIFO: the last element pushed is the first popped, and both operations happen at the top, like undo history or the call stack. A queue is FIFO: elements are enqueued at the rear and dequeued from the front, like a ticket line or a print queue. Both support these operations in O(1)."
+  },
+  {
+    "id": "tech-state-props",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Frontend Developer",
+      "Full Stack Developer"
+    ],
+    "question": "What is the difference between state and props in React, and when would you lift state up?",
+    "mustHaveKeywords": [
+      "state",
+      "props|properties",
+      "component",
+      "parent",
+      "child",
+      "read only|readonly|immutable|cannot be modified"
+    ],
+    "goodToHaveKeywords": [
+      "rerender|re render|render",
+      "lift|lifting|common parent|shared",
+      "usestate|hook|hooks",
+      "callback|setter|function"
+    ],
+    "keyConcepts": [
+      "props are read only inputs passed from a parent component",
+      "state is data owned and updated by the component itself",
+      "changing state triggers a rerender|render",
+      "lift state up to the nearest common parent when sibling components share data"
+    ],
+    "sampleIdealAnswer": "Props are read-only inputs a parent passes to a child component, while state is data a component owns and updates itself with something like useState. Changing state triggers a re-render. When two sibling components need the same data, I lift the state up to their nearest common parent and pass it down as props with callbacks."
+  },
+  {
+    "id": "tech-rest-put-patch",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "question": "Explain how REST APIs work and the difference between PUT and PATCH.",
+    "mustHaveKeywords": [
+      "http",
+      "resource|resources|endpoint|url",
+      "get|post|delete|verbs|methods",
+      "stateless",
+      "put",
+      "patch"
+    ],
+    "goodToHaveKeywords": [
+      "status code|status codes|200|404",
+      "idempotent|idempotency",
+      "json",
+      "partial|part of|replace|entire|whole"
+    ],
+    "keyConcepts": [
+      "rest models resources identified by urls and uses http methods",
+      "rest is stateless each request has all information",
+      "put replaces the entire resource",
+      "patch updates only part of a resource"
+    ],
+    "contradictions": [
+      {
+        "pattern": "\\bpatch\\b(?:(?!put|not|no|unlike|whereas)[^.]){0,30}\\b(replace|replaces|replacing)\\b[^.]{0,15}\\b(entire|whole|complete|full)",
+        "note": "PATCH updates only part of a resource; PUT replaces the entire resource."
+      }
+    ],
+    "sampleIdealAnswer": "REST models data as resources identified by URLs and uses HTTP methods such as GET, POST, PUT, PATCH and DELETE. It is stateless, so every request carries all the information the server needs, and status codes report the result. PUT replaces the entire resource and is idempotent, while PATCH updates only part of it."
+  },
+  {
+    "id": "tech-joins",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Data Analyst",
+      "Backend Developer",
+      "Software Developer",
+      "Full Stack Developer"
+    ],
+    "question": "Explain the difference between INNER JOIN and LEFT JOIN with an example.",
+    "mustHaveKeywords": [
+      "inner join|inner",
+      "left join|left",
+      "table|tables",
+      "match|matching|matches",
+      "null",
+      "rows|row|records"
+    ],
+    "goodToHaveKeywords": [
+      "customers|employees|students|users",
+      "orders|departments|courses",
+      "key|foreign key|primary key|on clause",
+      "all rows|every row|all records"
+    ],
+    "keyConcepts": [
+      "inner join returns only rows that match in both tables",
+      "left join returns all rows from the left table",
+      "unmatched rows from the right table get null values",
+      "example such as customers and orders"
+    ],
+    "contradictions": [
+      {
+        "pattern": "\\binner join\\b(?:(?!left|not|no|unlike|whereas)[^.]){0,40}\\ball (rows|records)\\b[^.]{0,20}\\b(from )?(the )?left",
+        "note": "INNER JOIN returns only matching rows; LEFT JOIN keeps all rows of the left table."
+      }
+    ],
+    "sampleIdealAnswer": "An INNER JOIN returns only the rows that have a match in both tables. A LEFT JOIN returns every row from the left table and the matching rows from the right; where there is no match, the right-side columns are NULL. For example, joining customers with orders, an inner join lists only customers who ordered, while a left join also lists customers with no orders."
+  },
+  {
+    "id": "tech-form-submit",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 35,
+    "roles": [
+      "Full Stack Developer"
+    ],
+    "question": "Walk me through what happens from the moment a user clicks Submit on a form to the data being saved.",
+    "mustHaveKeywords": [
+      "request|post",
+      "validation|validate",
+      "server|backend",
+      "database|db",
+      "response",
+      "frontend|client|browser"
+    ],
+    "goodToHaveKeywords": [
+      "api|endpoint|route",
+      "http|https",
+      "error|errors|error handling",
+      "update the ui|success message|redirect"
+    ],
+    "keyConcepts": [
+      "the client validates the input and sends an http request",
+      "the server validates again and processes the request",
+      "the data is written to the database",
+      "the server sends a response and the ui shows success or errors"
+    ],
+    "sampleIdealAnswer": "The browser first validates the fields, then sends an HTTP POST request to an API endpoint. The server routes it, validates the data again, applies business rules and writes the record to the database. It then returns a response, and the frontend updates the UI with a success message or shows errors if anything failed."
+  },
+  {
+    "id": "tech-testing-levels",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "QA Engineer",
+      "Software Developer"
+    ],
+    "question": "What is the difference between unit, integration and end-to-end testing?",
+    "mustHaveKeywords": [
+      "unit",
+      "integration",
+      "end to end|e2e|end-to-end",
+      "test|tests|testing",
+      "module|modules|component|function|function",
+      "user|flow|workflow|scenario"
+    ],
+    "goodToHaveKeywords": [
+      "isolated|isolation|mock|mocks",
+      "fast|speed|slow",
+      "cost|expensive",
+      "automation|automated|selenium|cypress|jest"
+    ],
+    "keyConcepts": [
+      "unit tests check small isolated pieces like a function",
+      "integration tests check that modules work together",
+      "end to end tests simulate a real user flow through the whole system",
+      "unit tests are fast and cheap while end to end tests are slower and costlier"
+    ],
+    "sampleIdealAnswer": "Unit tests check one small piece, such as a function, in isolation and run fast. Integration tests check that several modules, like the API and the database, work together. End-to-end tests simulate a real user flow through the whole application, so they give the most confidence but are slower and more expensive to maintain."
+  },
+  {
+    "id": "tech-learn-tool",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 35,
+    "roles": [
+      "General Graduate Role"
+    ],
+    "question": "Describe a tool or technology you learned recently and how you picked it up.",
+    "mustHaveKeywords": [
+      "learn|learned|learnt|learning",
+      "tool|technology|framework|language|software|git|github|library",
+      "tutorial|course|documentation|practice|video|docs",
+      "project|built|used|created",
+      "problem|need|needed|why"
+    ],
+    "goodToHaveKeywords": [
+      "improve|next|plan",
+      "challenge|difficult|stuck",
+      "result|outcome|helped",
+      "mentor|friend|community|forum"
+    ],
+    "keyConcepts": [
+      "tool|technology|framework|library|software|git|github needed|need|required|because",
+      "course|tutorial|documentation|docs|practice|practised|video|followed",
+      "built|used|created|project|applied|branches",
+      "next|plan|improve|want|future"
+    ],
+    "sampleIdealAnswer": "Recently I learned Git and GitHub because my team project needed version control. I followed the official documentation and a short course, then practised by creating branches and pull requests on a small project. I used it to merge our team's code without conflicts, and next I want to learn automated workflows."
+  },
+  {
+    "id": "tech-process-thread",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Software Developer",
+      "Backend Developer",
+      "General Graduate Role"
+    ],
+    "question": "What is the difference between a process and a thread?",
+    "mustHaveKeywords": [
+      "process",
+      "thread",
+      "memory|address space",
+      "share|shared|sharing",
+      "context switch|context switching|switch",
+      "lightweight|light weight|overhead"
+    ],
+    "goodToHaveKeywords": [
+      "resources|resource",
+      "isolation|isolated|independent",
+      "concurrency|parallel|multithreading",
+      "crash|fails|failure"
+    ],
+    "keyConcepts": [
+      "a process is a running program with its own memory address space",
+      "threads inside a process share the same memory and resources",
+      "threads are lightweight and switch faster than processes",
+      "processes are isolated from each other while threads can affect each other"
+    ],
+    "sampleIdealAnswer": "A process is a running program with its own address space and resources. Threads live inside a process and share its memory and resources, which makes them lightweight and faster to create and context-switch. Processes are isolated from each other, whereas a bug in one thread can affect the others in the same process."
+  },
+  {
+    "id": "tech-hash-table",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Software Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "question": "Explain how a hash table works and how collisions are handled.",
+    "mustHaveKeywords": [
+      "hash function|hash|hashing",
+      "key|keys",
+      "bucket|buckets|index|slot",
+      "collision|collisions",
+      "chaining|linked list|separate chaining",
+      "probing|open addressing|rehash"
+    ],
+    "goodToHaveKeywords": [
+      "bigo1|constant time|average",
+      "load factor|resize|resizing",
+      "value|values",
+      "bigon|worst case"
+    ],
+    "keyConcepts": [
+      "a hash function maps a key to a bucket index",
+      "lookups take bigo1 average time",
+      "collisions happen when two keys map to the same bucket",
+      "collisions are handled by chaining or open addressing probing"
+    ],
+    "sampleIdealAnswer": "A hash table uses a hash function to map each key to a bucket index, which gives O(1) average time for insert and lookup. A collision happens when two keys map to the same bucket; it is handled by chaining, where each bucket holds a linked list, or by open addressing with probing. Resizing keeps the load factor low so operations stay fast."
+  },
+  {
+    "id": "tech-where-having",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Data Analyst",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "question": "What is the difference between WHERE and HAVING in SQL?",
+    "mustHaveKeywords": [
+      "where",
+      "having",
+      "group by|grouping|grouped",
+      "aggregate|aggregates|count|sum|avg",
+      "rows|row|records",
+      "before|after"
+    ],
+    "goodToHaveKeywords": [
+      "filter|filters|filtering",
+      "condition",
+      "groups|group",
+      "example|select"
+    ],
+    "keyConcepts": [
+      "where filters individual rows before grouping",
+      "having filters groups after aggregation",
+      "having can use aggregate functions like count or sum",
+      "where cannot use aggregate functions"
+    ],
+    "sampleIdealAnswer": "WHERE filters individual rows before any grouping happens, so it cannot use aggregate functions. HAVING filters groups after GROUP BY and aggregation, so it can use COUNT, SUM or AVG. For example, I use WHERE to pick rows from 2024 and HAVING to keep only departments with more than ten employees."
+  },
+  {
+    "id": "tech-var-let-const",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Frontend Developer",
+      "Full Stack Developer",
+      "Software Developer"
+    ],
+    "question": "What is the difference between var, let and const in JavaScript?",
+    "mustHaveKeywords": [
+      "var",
+      "let",
+      "const",
+      "scope|scoped|block scope|function scope",
+      "reassign|reassigned|reassignment|redeclare",
+      "hoisting|hoisted"
+    ],
+    "goodToHaveKeywords": [
+      "block|blocks",
+      "temporal dead zone|tdz",
+      "object|array|mutate|mutable",
+      "immutable|constant"
+    ],
+    "keyConcepts": [
+      "var is function scoped and hoisted",
+      "let is block scoped and can be reassigned",
+      "const is block scoped and cannot be reassigned",
+      "const objects can still be mutated"
+    ],
+    "sampleIdealAnswer": "var is function-scoped and hoisted with an undefined value, so it can cause surprising bugs. let is block-scoped and can be reassigned, and const is block-scoped and cannot be reassigned, although an object or array declared with const can still be mutated. I use const by default and let when I need to reassign."
+  },
+  {
+    "id": "tech-bug-report",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "QA Engineer"
+    ],
+    "question": "What makes a good bug report, and what should it contain?",
+    "mustHaveKeywords": [
+      "steps|reproduce|reproduction|repro",
+      "expected",
+      "actual",
+      "severity|priority",
+      "environment|browser|version|device",
+      "screenshot|screenshots|logs|log|video|evidence"
+    ],
+    "goodToHaveKeywords": [
+      "title|summary",
+      "clear|concise",
+      "unique|duplicate",
+      "attachment|attachments"
+    ],
+    "keyConcepts": [
+      "a clear title summarising the problem",
+      "steps to reproduce the bug",
+      "expected result versus actual result",
+      "environment details and evidence such as screenshots or logs"
+    ],
+    "sampleIdealAnswer": "A good bug report has a clear title, exact steps to reproduce, the expected result and the actual result, the environment such as browser and version, and the severity. I attach screenshots or logs as evidence and keep it concise so a developer can reproduce it without asking questions."
+  },
+  {
+    "id": "tech-missing-values",
+    "category": "Technical Knowledge",
+    "maxMarks": 10,
+    "minWords": 25,
+    "roles": [
+      "Data Analyst"
+    ],
+    "question": "How would you handle missing values in a dataset?",
+    "mustHaveKeywords": [
+      "missing|null|nan|blank",
+      "remove|drop|delete",
+      "impute|imputation|fill|replace",
+      "mean|median|mode",
+      "understand|investigate|why|pattern|cause",
+      "bias|distort|skew"
+    ],
+    "goodToHaveKeywords": [
+      "percentage|proportion|how many",
+      "domain|context",
+      "forward fill|interpolate|interpolation|model",
+      "flag|indicator"
+    ],
+    "keyConcepts": [
+      "first investigate how much data is missing and why",
+      "remove rows or columns when little information is lost",
+      "impute with mean median or mode depending on the distribution",
+      "check that the method does not introduce bias"
+    ],
+    "sampleIdealAnswer": "First I investigate how many values are missing and why. If few rows are affected I may drop them; otherwise I impute with the mean, median or mode depending on the distribution, or use interpolation for time series. I then check that the method does not distort the data or introduce bias, and sometimes add a flag column."
+  },
+  {
+    "id": "ps-1",
+    "category": "Problem Solving",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Describe a challenging problem you faced in a project. How did you solve it?",
+    "mustHaveKeywords": [
+      "problem|issue|challenge|bug|error|slow|crash|failing",
+      "analyze|analyse|investigate|debug|root cause|identify|checked|found",
+      "solution|solved|fix|fixed|approach|resolved|added|implemented|cached",
+      "test|tested|verify|verified|confirmed",
+      "result|outcome|worked|improved|delivered"
+    ],
+    "goodToHaveKeywords": [
+      "team|mentor|help",
+      "learn|learned|lesson",
+      "alternative|options|tried",
+      "time|deadline"
+    ],
+    "keyConcepts": [
+      "problem|issue|challenge|bug|slow|crash|failing",
+      "profiled|investigate|analyse|analyze|debug|checked|root cause|found|measure|measured",
+      "added|fixed|solved|solution|implemented|cached|resolved",
+      "result|dropped|improved|reduced|learned|outcome|lesson"
+    ],
+    "sampleIdealAnswer": "In my final-year project our web app became very slow with many users. I profiled the queries, found a missing database index as the root cause, added it and cached repeated results. I tested with a load script, response time dropped from four seconds to under one, and I learned to measure before optimising."
+  },
+  {
+    "id": "ps-2",
+    "category": "Problem Solving",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Describe a time you debugged a difficult bug. What was your process?",
+    "mustHaveKeywords": [
+      "bug|error|issue|crash|failure",
+      "reproduce|reproduced|reproduction|replicate",
+      "logs|log|debugger|breakpoint|print|console|stack trace",
+      "cause|root cause|found|identified",
+      "fix|fixed|resolved|solution",
+      "test|tested|verified|regression"
+    ],
+    "goodToHaveKeywords": [
+      "hypothesis|assumption|narrowed|isolated",
+      "learn|learned|lesson",
+      "team|colleague|help",
+      "document|documented"
+    ],
+    "keyConcepts": [
+      "reproduce the bug reliably",
+      "use logs or a debugger to narrow down the cause",
+      "apply a fix for the root cause",
+      "test the fix and learn from it"
+    ],
+    "sampleIdealAnswer": "Our login sometimes failed randomly. I first reproduced it reliably, then used logs and a debugger to narrow it down and found a race condition in the session code. I fixed the root cause, wrote a test to prevent it returning, and I learned to add logging early."
+  },
+  {
+    "id": "ps-3",
+    "category": "Problem Solving",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "A page in your application loads very slowly. How would you find and fix the cause?",
+    "mustHaveKeywords": [
+      "measure|profile|profiling|lighthouse|devtools|network tab|monitor",
+      "network|api|requests|request",
+      "database|query|queries|index",
+      "images|assets|bundle|javascript|cache|caching|compress",
+      "fix|optimise|optimize|improve|reduce",
+      "test|verify|compare|again"
+    ],
+    "goodToHaveKeywords": [
+      "lazy|lazy loading|cdn",
+      "baseline|before and after",
+      "bottleneck",
+      "pagination"
+    ],
+    "keyConcepts": [
+      "measure first to find the bottleneck",
+      "check network requests and database queries",
+      "optimise assets with caching compression or lazy loading",
+      "re measure to confirm the improvement"
+    ],
+    "sampleIdealAnswer": "I would first measure with browser dev tools to find the bottleneck rather than guess. Then I check network requests, large images or bundles and slow database queries. I fix the biggest cause, for example by adding an index, caching, compressing assets or lazy loading, and then measure again to confirm the page is faster."
+  },
+  {
+    "id": "ps-4",
+    "category": "Problem Solving",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "You have a deadline in two days, but the task needs about a week of work. What do you do?",
+    "mustHaveKeywords": [
+      "priority|prioritize|prioritise|prioritization|important",
+      "scope|mvp|minimum|essential|core",
+      "communicate|inform|tell|discuss|update|manager|lead",
+      "plan|break|breakdown|tasks|schedule",
+      "help|support|delegate|team",
+      "quality|deliver|deadline"
+    ],
+    "goodToHaveKeywords": [
+      "risk|risks",
+      "estimate|estimation",
+      "realistic|honest",
+      "later|phase|next release"
+    ],
+    "keyConcepts": [
+      "break the work down and prioritise the essential parts",
+      "communicate early with the manager about scope and risks",
+      "agree on a reduced scope or extra help",
+      "deliver the core on time and plan the rest"
+    ],
+    "sampleIdealAnswer": "I would break the task into parts and prioritise the essential features, then talk to my manager early about the risk and agree on a smaller scope or extra help. I would deliver the core on time with good quality and plan the remaining work for the next phase."
+  },
+  {
+    "id": "ps-5",
+    "category": "Problem Solving",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Tell me about a time you had to learn something new quickly to solve a problem.",
+    "mustHaveKeywords": [
+      "learn|learned|learnt|learning",
+      "problem|need|needed|task|project|deadline",
+      "resources|documentation|tutorial|course|video|docs|mentor",
+      "practice|practised|practiced|prototype|applied|built|implemented",
+      "result|outcome|completed|delivered|worked|solved"
+    ],
+    "goodToHaveKeywords": [
+      "time|days|week",
+      "ask|asked|help",
+      "reflect|lesson",
+      "confidence"
+    ],
+    "keyConcepts": [
+      "needed|need|required|never|new|hackathon|project|deadline",
+      "learned|learnt|documentation|tutorial|course|mentor|evening|read",
+      "built|prototype|applied|used|implemented",
+      "worked|finals|result|delivered|realised|realized|completed|won"
+    ],
+    "sampleIdealAnswer": "In a hackathon we needed a chatbot, which I had never built. I learned the API from its documentation and a short tutorial in one evening, built a prototype and applied it to our project. It worked in the demo and we reached the finals, and I realised I can learn quickly under pressure."
+  },
+  {
+    "id": "comm-1",
+    "category": "Communication",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "How would you explain a complex technical concept to a non-technical team member?",
+    "mustHaveKeywords": [
+      "simple|simply|plain|easy|everyday",
+      "example|analogy|metaphor|compare",
+      "jargon|technical terms|technical words",
+      "audience|listener|their background|level",
+      "understand|understood|understanding|clear",
+      "feedback|questions|ask|check"
+    ],
+    "goodToHaveKeywords": [
+      "visual|diagram|draw|picture",
+      "step|steps|small",
+      "patient|listen",
+      "summary|summarize|summarise"
+    ],
+    "keyConcepts": [
+      "simple|simply|plain|everyday|jargon",
+      "example|analogy|comparing|compare|metaphor",
+      "audience|background|listener|level",
+      "questions|ask|check|feedback"
+    ],
+    "sampleIdealAnswer": "I would use simple everyday language, avoid jargon and explain with an analogy, such as comparing an API to a waiter who carries orders between the table and the kitchen. I would keep the audience's background in mind, use a small diagram if useful, and then ask questions to check that they understood."
+  },
+  {
+    "id": "comm-2",
+    "category": "Communication",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "How do you make sure your teammates understand your updates and instructions?",
+    "mustHaveKeywords": [
+      "clear|clearly|concise|simple",
+      "confirm|check|verify|summarize|summarise|repeat back",
+      "written|document|documentation|message|email|notes",
+      "questions|ask|feedback",
+      "listen|listening",
+      "follow up|follow-up|reminder"
+    ],
+    "goodToHaveKeywords": [
+      "meeting|call|standup",
+      "example|examples",
+      "channel|chat|slack|tool",
+      "tone|respect"
+    ],
+    "keyConcepts": [
+      "be clear and concise about what is needed",
+      "confirm understanding by asking them to repeat or summarise",
+      "put important points in writing",
+      "listen and invite questions and feedback"
+    ],
+    "sampleIdealAnswer": "I keep my updates clear and concise, and I confirm understanding by asking teammates to summarise the next steps. I put important decisions in writing, such as a short message or notes, and I invite questions and listen to feedback. I follow up later to make sure nothing was missed."
+  },
+  {
+    "id": "comm-3",
+    "category": "Communication",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "How would you give constructive feedback to a teammate whose work needs improvement?",
+    "mustHaveKeywords": [
+      "private|privately|one on one|one-on-one|in person",
+      "specific|specifically|example|examples",
+      "respect|respectful|polite|kind|empathy",
+      "suggest|suggestion|improve|improvement|solution|help",
+      "listen|their side|perspective|hear",
+      "positive|strength|appreciate|good"
+    ],
+    "goodToHaveKeywords": [
+      "behavior|work|not the person",
+      "follow up|follow-up|check in",
+      "goal|goals",
+      "timing|right time"
+    ],
+    "keyConcepts": [
+      "give feedback privately and respectfully",
+      "be specific about the work with examples",
+      "suggest ways to improve and offer help",
+      "listen to their perspective"
+    ],
+    "sampleIdealAnswer": "I would speak to them privately and respectfully, start with something positive, and then be specific about the work with an example rather than criticising the person. I would suggest how to improve and offer help, listen to their side, and follow up later to see how it is going."
+  },
+  {
+    "id": "comm-4",
+    "category": "Communication",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "How would you explain a project delay to your manager or a client?",
+    "mustHaveKeywords": [
+      "honest|honestly|transparent|transparency",
+      "early|promptly|immediately|as soon as",
+      "reason|cause|why",
+      "plan|new timeline|revised|recovery|mitigation",
+      "impact|risk|effect",
+      "update|updates|regular"
+    ],
+    "goodToHaveKeywords": [
+      "apologise|apologize|responsibility|accountable",
+      "options|alternatives",
+      "solution|solutions",
+      "lesson|prevent"
+    ],
+    "keyConcepts": [
+      "inform them early and honestly",
+      "explain the reason and the impact",
+      "present a revised plan or options",
+      "give regular updates until it is resolved"
+    ],
+    "sampleIdealAnswer": "I would tell them early and honestly, explain the reason for the delay and its impact, and take responsibility. Then I would present a revised timeline with options to recover, and give regular updates until the work is delivered."
+  },
+  {
+    "id": "comm-5",
+    "category": "Communication",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "How do you handle a disagreement during a discussion while staying respectful?",
+    "mustHaveKeywords": [
+      "listen|listening|hear|understand",
+      "respect|respectful|polite|calm",
+      "perspective|point of view|viewpoint|side",
+      "facts|data|evidence|reason|reasons",
+      "compromise|agree|common ground|consensus|solution",
+      "focus|issue|problem|goal"
+    ],
+    "goodToHaveKeywords": [
+      "question|questions|clarify",
+      "emotion|emotions|personal",
+      "decision|decide",
+      "follow up|follow-up"
+    ],
+    "keyConcepts": [
+      "listen fully to understand the other perspective",
+      "stay calm and respectful and focus on the issue not the person",
+      "use facts and data to explain my view",
+      "look for a compromise or common ground"
+    ],
+    "sampleIdealAnswer": "I first listen to understand the other person's perspective, stay calm and respectful, and focus on the issue rather than the person. I explain my view using facts and examples, ask clarifying questions, and look for a compromise or common ground so we can decide together."
+  },
+  {
+    "id": "beh-1",
+    "category": "Behavioral",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Tell me about a time you worked in a team. What was your contribution, and what did you learn?",
+    "mustHaveKeywords": [
+      "team|group|together|colleagues|teammates",
+      "contribution|responsible|responsibility|role|handled|took|worked on|my part",
+      "communicate|communication|collaborate|collaboration|coordinate",
+      "result|outcome|achieved|delivered|completed|successful|finished",
+      "learned|learnt|learn|lesson|realised|realized"
+    ],
+    "goodToHaveKeywords": [
+      "project|hackathon|assignment|internship",
+      "goal|deadline",
+      "conflict|challenge|difficulty",
+      "helped|support|supported"
+    ],
+    "keyConcepts": [
+      "team|group|project|goal|deadline|weeks",
+      "responsible|role|handled|took|coordinated|contribution|backend|frontend|built|developed",
+      "communicate|communication|collaborate|coordinated|coordinate|daily",
+      "delivered|achieved|won|result|learned|lesson"
+    ],
+    "sampleIdealAnswer": "In our final-year project, our team of four had to build a web app in six weeks. I was responsible for the backend and database, and I coordinated daily with the frontend teammates. We delivered on time and won the department award, and I learned the value of clear communication."
+  },
+  {
+    "id": "beh-2",
+    "category": "Behavioral",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Describe a time you faced a conflict in a team. How did you handle it?",
+    "mustHaveKeywords": [
+      "conflict|disagreement|disagreed|argument|tension",
+      "listen|listened|heard|understand|discussed|talked",
+      "resolved|resolve|solution|compromise|agreed|settled",
+      "result|outcome|delivered|completed|worked out",
+      "learned|learnt|lesson|realised|realized"
+    ],
+    "goodToHaveKeywords": [
+      "calm|respectful",
+      "perspective|point of view|side",
+      "team|teammates",
+      "communicate|communication"
+    ],
+    "keyConcepts": [
+      "the situation and the cause of the conflict",
+      "listening to both sides calmly",
+      "the action taken to resolve it",
+      "the result and what you learned"
+    ],
+    "sampleIdealAnswer": "In our project, two teammates disagreed about the architecture. I set up a short meeting, let both explain their side calmly, listed pros and cons, and we agreed on a hybrid approach. The project was delivered on time, and I learned to document decisions and listen first."
+  },
+  {
+    "id": "beh-3",
+    "category": "Behavioral",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Tell me about a failure or mistake and what you learned from it.",
+    "mustHaveKeywords": [
+      "failure|failed|mistake|error|wrong|missed|fell short",
+      "reason|cause|because|why",
+      "learned|learnt|learn|lesson|realised|realized",
+      "improve|improved|changed|corrected|fixed|plan",
+      "next|result|since|now|afterwards"
+    ],
+    "goodToHaveKeywords": [
+      "responsibility|accountable|owned",
+      "example|project|exam|subject",
+      "feedback",
+      "better|stronger"
+    ],
+    "keyConcepts": [
+      "failure|failed|mistake|error|wrong|missed",
+      "responsibility|owned|accountable|took|admitted",
+      "learned|learnt|lesson|realised|realized|understood",
+      "since|now|changed|built|plan|next|cleared|improved|result"
+    ],
+    "sampleIdealAnswer": "I failed a subject because I started preparing too late. I took responsibility, learned that I had to plan ahead, built a weekly study schedule and cleared it in the next attempt. Since then I plan early for every exam and project."
+  },
+  {
+    "id": "beh-4",
+    "category": "Behavioral",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Tell me about a time you took the initiative or led others.",
+    "mustHaveKeywords": [
+      "initiative|lead|led|leader|leadership|took charge|volunteered",
+      "team|group|others|members|classmates|teammates",
+      "plan|planned|organised|organized|assigned|delegated|coordinated",
+      "motivate|motivated|support|supported|guided|helped",
+      "result|outcome|achieved|delivered|successful|completed",
+      "learned|lesson|realised|realized"
+    ],
+    "goodToHaveKeywords": [
+      "goal|deadline",
+      "challenge|problem",
+      "feedback",
+      "responsibility"
+    ],
+    "keyConcepts": [
+      "initiative|lead|led|leader|volunteered|took",
+      "plan|planned|organised|organized|assigned|delegated|coordinated|tasks",
+      "motivate|motivated|support|supported|guided|helped|encouraged|stuck|teammates",
+      "delivered|achieved|finals|result|learned|lesson|realised|realized"
+    ],
+    "sampleIdealAnswer": "In our college hackathon nobody wanted to lead, so I took the initiative. I planned the tasks, assigned them according to everyone's strengths and supported teammates who were stuck. We delivered a working prototype and reached the finals, and I learned how important clear planning and support are."
+  },
+  {
+    "id": "beh-5",
+    "category": "Behavioral",
+    "maxMarks": 10,
+    "minWords": 35,
+    "question": "Tell me about a time you received critical feedback. How did you respond?",
+    "mustHaveKeywords": [
+      "feedback|criticism|suggestion",
+      "listen|listened|accepted|understood|reflected",
+      "improve|improved|changed|applied|worked on",
+      "result|outcome|better|since|now",
+      "learned|learnt|lesson|grateful|realised|realized"
+    ],
+    "goodToHaveKeywords": [
+      "calm|open|positive",
+      "mentor|manager|teacher|senior|lead",
+      "example|project",
+      "follow up|asked"
+    ],
+    "keyConcepts": [
+      "the feedback that you received",
+      "listening openly without being defensive",
+      "the actions taken to improve",
+      "the result and what you learned"
+    ],
+    "sampleIdealAnswer": "My mentor told me my code was hard to read. I listened without being defensive, asked for examples, and then worked on naming and comments and followed a style guide. My next review was much better, and I learned that feedback is a quick way to improve."
+  }
+]

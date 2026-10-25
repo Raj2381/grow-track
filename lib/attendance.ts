@@ -14,7 +14,8 @@ export type AttendanceStudent = {
 
 export type AttendanceRecord = {
   studentId: string;
-  status: AttendanceStatus;
+  /** null = not marked yet */
+  status: AttendanceStatus | null;
 };
 
 export type AttendanceSession = {

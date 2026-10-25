@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@stud
 import { Badge } from '@student/components/ui/badge'
 import { Label, Progress, Select, Textarea, useToast } from '@student/components/ui/misc'
 import { InsightsCard, PageHeader, WithData } from '@student/components/common'
-import { aiIsLive, evaluateInterview } from '@student/services/ai'
+import type { EvaluationResult } from '@/evaluation/types'
 import { saveInterviewAttempt } from '@student/services/api'
 import { useSpeech } from '@student/hooks/useSpeech'
 import { useCamera } from '@student/hooks/useCamera'
@@ -16,98 +16,26 @@ import { useStudent } from '@student/hooks/useStudent'
 import { TODAY } from '@student/data/students'
 import { cn, fmtDate, scoreTone, TONE } from '@student/lib/utils'
 
-/* ------------------------------ question bank ------------------------------ */
-interface Question { category: string; question: string; keywords: string[]; idealPoints: string[] }
+/* ------------------------------ questions & scoring ------------------------------ */
+// Rubrics, ideal answers and all scoring live on the server (evaluation/, /api/mock-interview/*).
+// The browser only receives the question text and the evaluation result.
+interface Question { id: string; category: string; question: string; maxMarks: number }
+type AnswerResult = EvaluationResult & { question: string; answer: string }
 
 const ROLES = ['Software Developer', 'Frontend Developer', 'Backend Developer', 'Data Analyst', 'Full Stack Developer', 'QA Engineer', 'General Graduate Role'] as const
 type Role = (typeof ROLES)[number]
+const CATEGORIES = ['Introduction', 'Technical Knowledge', 'Problem Solving', 'Communication', 'Behavioral']
 
-const TECH_BY_ROLE: Record<Role, Question> = {
-  'Software Developer': { category: 'Technical Knowledge', question: 'Explain the difference between an array and a linked list. When would you use each?',
-    keywords: ['array', 'linked list', 'memory', 'index', 'insertion', 'deletion', 'access', 'pointer'],
-    idealPoints: ['Arrays use indexed, contiguous storage', 'Linked lists connect nodes using references', 'Arrays give fast indexed access (O(1))', 'Linked lists allow cheap insertion/deletion when the node is known'] },
-  'Frontend Developer': { category: 'Technical Knowledge', question: 'What is the difference between state and props in React, and when would you lift state up?',
-    keywords: ['state', 'props', 'component', 'parent', 'child', 'immutable', 'rerender', 'lift'],
-    idealPoints: ['Props are read-only inputs from a parent', 'State is data owned and updated by a component', 'Changing state triggers a re-render', 'Lift state to the nearest common parent when siblings share data'] },
-  'Backend Developer': { category: 'Technical Knowledge', question: 'Explain how REST APIs work and the difference between PUT and PATCH.',
-    keywords: ['http', 'resource', 'get', 'post', 'put', 'patch', 'stateless', 'status code', 'idempotent'],
-    idealPoints: ['REST models resources with URLs and HTTP verbs', 'It is stateless', 'PUT replaces a resource, PATCH updates part of it', 'PUT is idempotent; status codes communicate results'] },
-  'Data Analyst': { category: 'Technical Knowledge', question: 'Explain the difference between INNER JOIN and LEFT JOIN with an example.',
-    keywords: ['inner', 'left', 'join', 'table', 'match', 'null', 'rows', 'key'],
-    idealPoints: ['INNER JOIN returns only matching rows', 'LEFT JOIN keeps all rows from the left table', 'Unmatched right-side columns become NULL', 'Give a concrete example such as customers and orders'] },
-  'Full Stack Developer': { category: 'Technical Knowledge', question: 'Walk me through what happens from the moment a user clicks "Submit" on a form to the data being saved.',
-    keywords: ['request', 'api', 'server', 'database', 'validation', 'response', 'frontend', 'http'],
-    idealPoints: ['Client-side validation and the HTTP request', 'Server routing and server-side validation', 'Database write', 'Response and UI update, including error handling'] },
-  'QA Engineer': { category: 'Technical Knowledge', question: 'What is the difference between unit, integration and end-to-end testing?',
-    keywords: ['unit', 'integration', 'end-to-end', 'test', 'module', 'automation', 'scope', 'bug'],
-    idealPoints: ['Unit tests check small isolated pieces', 'Integration tests check modules working together', 'End-to-end tests simulate real user flows', 'Cost and speed trade-offs between them'] },
-  'General Graduate Role': { category: 'Technical Knowledge', question: 'Describe a tool or technology you learned recently and how you picked it up.',
-    keywords: ['learn', 'tutorial', 'practice', 'project', 'documentation', 'used', 'tool', 'improve'],
-    idealPoints: ['Name the tool and why you needed it', 'Explain your learning approach', 'Describe something you built or used it for', 'Reflect on what you would do next'] },
+/** 0 red, 1–4 orange, 5–7 yellow, 8–10 green (marks out of 10). */
+function markStyle(marks: number, max: number) {
+  const m = (marks / max) * 10
+  if (m <= 0) return { badge: 'bg-red-100 text-red-700 dark:bg-red-500/20 dark:text-red-300', bar: '#dc2626' }
+  if (m < 5) return { badge: 'bg-orange-100 text-orange-700 dark:bg-orange-500/20 dark:text-orange-300', bar: '#ea580c' }
+  if (m < 8) return { badge: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-500/20 dark:text-yellow-300', bar: '#ca8a04' }
+  return { badge: 'bg-green-100 text-green-700 dark:bg-green-500/20 dark:text-green-300', bar: '#16a34a' }
 }
-
-function questionsFor(role: Role): Question[] {
-  return [
-    { category: 'Introduction', question: 'Tell me about yourself, your education, and the kind of role you are looking for.',
-      keywords: ['education', 'project', 'skill', 'experience', 'goal', 'role', 'learn', 'interest'],
-      idealPoints: ['A clear educational background', 'Relevant skills', 'A project, achievement or experience', 'A career goal connected to the role'] },
-    TECH_BY_ROLE[role],
-    { category: 'Problem Solving', question: 'Describe a challenging problem you faced in a project. How did you solve it?',
-      keywords: ['problem', 'challenge', 'solution', 'debug', 'analyze', 'result', 'tested', 'team'],
-      idealPoints: ['A specific problem and its context', 'Steps taken to investigate', 'Reasoning behind the chosen solution', 'Outcome and lesson learned'] },
-    { category: 'Communication', question: 'How would you explain a complex technical concept to a non-technical team member?',
-      keywords: ['simple', 'example', 'analogy', 'understand', 'audience', 'feedback', 'explain', 'jargon'],
-      idealPoints: ['Use plain language', 'Give an example or analogy', 'Avoid unnecessary jargon', 'Check understanding and invite questions'] },
-    { category: 'Behavioral', question: 'Tell me about a time you worked in a team. What was your contribution, and what did you learn?',
-      keywords: ['team', 'collaborate', 'responsibility', 'contribution', 'communication', 'result', 'learned', 'helped'],
-      idealPoints: ['The team goal and situation', 'Your individual contribution', 'Communication and collaboration', 'Outcome and what you learned'] },
-  ]
-}
-
-/* -------------------------------- evaluation -------------------------------- */
-interface AnswerResult { question: string; category: string; answer: string; score: number; feedback: string; strengths: string[]; improvements: string[]; idealPoints: string[]; comm: number; tech: number; conf: number }
-const FILLERS = /\b(um+|uh+|like|basically|actually|you know|kind of|sort of)\b/gi
-const clamp = (n: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, n))
-
-/** Rule-based practice scoring: relevance (keywords), depth (length), structure, examples, filler words. */
-function evaluateAnswer(q: Question, raw: string): AnswerResult {
-  const answer = raw.trim()
-  const lc = answer.toLowerCase()
-  const words = lc.match(/\b[\w'-]+\b/g) ?? []
-  const matched = q.keywords.filter((k) => lc.includes(k.toLowerCase()))
-  const relevance = Math.min(matched.length / q.keywords.length * 1.6, 1)
-  const hasStructure = /\b(first|second|third|finally|because|therefore|as a result|step|then|however|so that)\b/.test(lc)
-  const hasExample = /\b(for example|for instance|such as|project|when i|in my|i built|i used|i led)\b/.test(lc)
-  const hasResult = /\b(result|outcome|improved|reduced|increased|learned|achieved|delivered)\b/.test(lc)
-  const fillers = answer.match(FILLERS)?.length ?? 0
-  // depth peaks between 50 and 160 words, tapering for rambling answers
-  const depth = words.length < 50 ? words.length / 50 : words.length <= 160 ? 1 : Math.max(0.7, 1 - (words.length - 160) / 400)
-
-  let score = Math.round(10 + relevance * 40 + depth * 20 + (hasStructure ? 8 : 0) + (hasExample ? 12 : 0) + (hasResult ? 10 : 0) - Math.min(10, fillers * 2))
-  if (words.length < 8) score = Math.min(score, 20)
-  if (words.length >= 25 && matched.length >= 2) score = Math.max(score, 50)
-  score = clamp(score)
-
-  const strengths: string[] = [], improvements: string[] = []
-  if (words.length >= 40) strengths.push('You gave a developed, reasonably detailed response.'); else improvements.push('Expand with more specifics — aim for roughly 60–120 words (4–6 sentences).')
-  if (matched.length >= 3) strengths.push(`You covered key ideas: ${matched.slice(0, 4).join(', ')}.`)
-  else improvements.push(`Address the core concepts directly (e.g. ${q.keywords.filter((k) => !matched.includes(k)).slice(0, 3).join(', ')}).`)
-  if (hasExample) strengths.push('You grounded the answer in an example or project.'); else improvements.push('Add a real example from a project, class or experience.')
-  if (hasStructure) strengths.push('Your answer was organised with clear connecting words.'); else improvements.push('Structure it: situation → action → result.')
-  if (hasResult) strengths.push('You mentioned an outcome or lesson learned.')
-  if (fillers > 2) improvements.push(`You used ${fillers} filler words (um, like, basically) — pause instead.`)
-
-  const feedback = score >= 80 ? 'Strong answer. Keep backing points with specific evidence.' : score >= 60 ? 'Good start. Add precision and explain your reasoning to make it stand out.'
-    : score >= 35 ? 'You addressed part of the question. Focus on the main concepts and develop your explanation.' : 'Try again with a fuller answer: explain your approach and include at least one relevant detail or example.'
-
-  return {
-    question: q.question, category: q.category, answer: answer || 'No answer submitted.', score, feedback,
-    strengths: strengths.slice(0, 3), improvements: improvements.slice(0, 3), idealPoints: q.idealPoints,
-    tech: clamp(Math.round(25 + relevance * 65 + (words.length >= 30 ? 8 : 0))),
-    comm: clamp(Math.round(30 + depth * 30 + (hasStructure ? 15 : 0) + (hasExample ? 15 : 0) - Math.min(15, fillers * 3))),
-    conf: clamp(Math.round(40 + depth * 30 + (/(not sure|i don't know|maybe i)/.test(lc) ? -15 : 10) - Math.min(15, fillers * 4) + (hasResult ? 8 : 0))),
-  }
-}
+const pct = (n: number, d: number) => (d ? Math.round((n / d) * 100) : 0)
+const avg = (xs: number[]) => (xs.length ? Math.round(xs.reduce((a, b) => a + b, 0) / xs.length) : 0)
 
 const fmt = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
 
@@ -117,14 +45,15 @@ export default function MockInterview() {
   const toast = useToast()
   const [phase, setPhase] = useState<'setup' | 'ready' | 'interview' | 'results'>('setup')
   const [role, setRole] = useState<Role>('Software Developer')
-  const [questions, setQuestions] = useState<Question[]>(() => questionsFor('Software Developer'))
+  const [questions, setQuestions] = useState<Question[]>([])
   const [cur, setCur] = useState(0)
   const [answers, setAnswers] = useState<string[]>([])
   const [results, setResults] = useState<AnswerResult[]>([])
   const [summary, setSummary] = useState('')
   const [elapsed, setElapsed] = useState(0)
   const [finishing, setFinishing] = useState(false)
-  const [overall, setOverall] = useState<{ score: number; comm: number; tech: number; conf: number } | null>(null)
+  const [starting, setStarting] = useState(false)
+  const [overall, setOverall] = useState<{ score: number; total: number; max: number; comm: number; tech: number; conf: number } | null>(null)
 
   const speech = useSpeech()
   const cam = useCamera()
@@ -220,7 +149,18 @@ export default function MockInterview() {
   }, [speech.final, speech.listening, phase, cur])
 
   const start = async () => {
-    const qs = questionsFor(role)
+    let qs: Question[]
+    setStarting(true)
+    try {
+      const res = await fetch(`/api/mock-interview/questions?role=${encodeURIComponent(role)}`, { cache: 'no-store' })
+      if (!res.ok) throw new Error(String(res.status))
+      qs = ((await res.json()) as { questions: Question[] }).questions
+    } catch {
+      setStarting(false)
+      toast.error('Could not load the interview questions. Please try again.')
+      return
+    }
+    setStarting(false)
     interviewQuestionsRef.current = qs
     speech.stop()
     speech.reset()
@@ -285,17 +225,32 @@ export default function MockInterview() {
     setSpeakingQuestion(false)
     setFinishing(true)
     frozenElapsed.current = Math.round((Date.now() - startedAt.current) / 1000)
-    const evaluated = questions.map((q, i) => evaluateAnswer(q, answers[i] ?? ''))
-    const mean = (f: (r: AnswerResult) => number) => Math.round(evaluated.reduce((a, r) => a + f(r), 0) / evaluated.length)
-    let o = { score: mean((r) => r.score), comm: mean((r) => r.comm), tech: mean((r) => r.tech), conf: mean((r) => r.conf) }
-    let sum = `${role} interview: ${evaluated.filter((r) => r.answer !== 'No answer submitted.').length}/${evaluated.length} answered, average ${o.score}/100.`
-    if (aiIsLive) { // live model overrides the rule-based overall scores when a key is configured
-      const ev = await evaluateInterview(questions.map((q, i) => ({ question: q.question, answer: answers[i] || '(no answer)' })), 'Mixed', 'Medium')
-      o = { score: ev.overall, comm: ev.communication, tech: ev.technical, conf: ev.confidence }; sum = ev.summary
+    let evaluated: AnswerResult[]
+    let total = 0, max = 0
+    try {
+      const res = await fetch('/api/mock-interview/evaluate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: questions.map((q, i) => ({ questionId: q.id, answer: answers[i] ?? '' })) }),
+      })
+      if (!res.ok) throw new Error(String(res.status))
+      const data = (await res.json()) as { results: EvaluationResult[]; total: number; max: number }
+      evaluated = data.results.map((r, i) => ({ ...r, question: questions[i].question, answer: answers[i]?.trim() || 'No answer submitted.' }))
+      total = data.total; max = data.max
+    } catch {
+      setFinishing(false)
+      toast.error('Could not evaluate your answers. Check your connection and press Finish again.')
+      return
     }
+    const byCat = (cats: string[]) => evaluated.filter((r) => cats.includes(r.category)).map((r) => pct(r.score, r.maxMarks))
+    const clarity = evaluated.map((r) => pct(r.breakdown.clarity, r.maxMarks * 0.15))
+    const o = { score: pct(total, max), total, max, tech: avg(byCat(['Technical Knowledge', 'Problem Solving'])), comm: avg(byCat(['Introduction', 'Communication'])), conf: avg(clarity) }
+    const answeredCount = evaluated.filter((r) => r.answer !== 'No answer submitted.').length
+    const relevantCount = evaluated.filter((r) => r.relevant).length
+    const sum = `${role} interview: ${answeredCount}/${evaluated.length} answered, ${relevantCount} relevant. Score ${total}/${max} (${o.score}%).`
     await saveInterviewAttempt(studentId, { date: TODAY, type: role, difficulty: 'Standard', score: o.score, ratings: { communication: o.comm, technical: o.tech, confidence: o.conf }, feedback: sum })
     cam.stop(); setResults(evaluated); setOverall(o); setSummary(sum); setFinishing(false); setPhase('results')
-    toast.success(`Interview saved — score ${o.score}/100`)
+    toast.success(`Interview saved — ${total}/${max}`)
   }
 
   const reset = () => {
@@ -311,7 +266,7 @@ export default function MockInterview() {
       {() => (
         <>
           <PageHeader title="Mock Interview" description="Practise real interview questions by typing or speaking, then get a detailed report. Your best score feeds Placement readiness." />
-          {!aiIsLive && <div className="mb-4 rounded-xl bg-muted/60 p-3 text-xs text-muted-foreground">Practice mode: answers are scored by built-in rules (relevance, depth, structure, examples, filler words) — not an LLM or a hiring assessment.</div>}
+          <div className="mb-4 rounded-xl bg-muted/60 p-3 text-xs text-muted-foreground">Strict scoring: each answer is checked on the server for relevance first (off-topic, copied, gibberish or \"I don't know\" answers score 0), then marked against a rubric of required keywords and concepts. Practice only — not a hiring assessment.</div>
 
           {phase === 'setup' && (
             <div className="grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -324,13 +279,13 @@ export default function MockInterview() {
                     <Badge tone={canReadAloud ? 'good' : 'warn'}>{canReadAloud ? 'Question read-aloud available' : 'Question read-aloud unsupported'}</Badge>
                     <Badge tone={speech.supported ? 'good' : 'warn'}>{speech.supported ? 'Voice input available' : 'Voice input unsupported here — use typing'}</Badge>
                   </div>
-                  <Button size="lg" className="w-full" onClick={start}><Play className="h-4 w-4" />Start mock interview<ChevronRight className="h-4 w-4" /></Button>
+                  <Button size="lg" className="w-full" onClick={start} disabled={starting}>{starting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />}Start mock interview<ChevronRight className="h-4 w-4" /></Button>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>                <CardTitle>Your interview plan</CardTitle><CardDescription>Questions are revealed and read aloud one at a time · Tailored to {role}</CardDescription></CardHeader>
                 <CardContent className="space-y-3">
-                  {questionsFor(role).map((x, i) => (
+                  {CATEGORIES.map((c, i) => ({ category: c })).map((x, i) => (
                     <div key={x.category} className="flex items-center gap-3"><div className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-muted text-sm font-semibold">{i + 1}</div><div><div className="text-sm font-semibold">{x.category}</div><div className="text-xs text-muted-foreground">One question · individual feedback</div></div></div>
                   ))}
                 </CardContent>
@@ -459,7 +414,7 @@ export default function MockInterview() {
                     <p className="mt-2 max-w-xl text-sm text-slate-300">{summary} This attempt is saved to your history and counts toward Placement readiness.</p>
                   </div>
                   <div className="flex items-center gap-5 rounded-xl border border-white/10 bg-white/5 p-5">
-                    <div className="grid h-24 w-24 place-items-center rounded-full border-4" style={{ borderColor: TONE[scoreTone(overall.score)].hex }}><div className="text-center"><div className="text-3xl font-bold">{overall.score}</div><div className="text-[10px] uppercase tracking-wider text-slate-300">out of 100</div></div></div>
+                    <div className="grid h-24 w-24 place-items-center rounded-full border-4" style={{ borderColor: markStyle(overall.total, overall.max).bar }}><div className="text-center"><div className="text-2xl font-bold">{overall.total}/{overall.max}</div><div className="text-[10px] uppercase tracking-wider text-slate-300">{overall.score}%</div></div></div>
                     <div><div className="text-lg font-bold">{overall.score >= 80 ? 'Great practice!' : overall.score >= 60 ? 'Good progress' : overall.score >= 35 ? 'Keep improving' : 'More practice needed'}</div><div className="mt-1 text-xs text-slate-400">Time: {fmt(frozenElapsed.current)}</div></div>
                   </div>
                 </div>
@@ -471,22 +426,59 @@ export default function MockInterview() {
                 ))}
               </div>
 
+              <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+                <Card>
+                  <CardHeader><CardTitle>Score by category</CardTitle><CardDescription>Marks earned out of marks available</CardDescription></CardHeader>
+                  <CardContent className="space-y-3">
+                    {results.map((r) => (
+                      <div key={r.questionId}>
+                        <div className="mb-1 flex justify-between text-sm"><span className="font-medium">{r.category}</span><span className="tabular-nums text-muted-foreground">{r.score}/{r.maxMarks}</span></div>
+                        <div className="h-3 overflow-hidden rounded-full bg-muted"><div className="h-full rounded-full" style={{ width: `${pct(r.score, r.maxMarks)}%`, background: markStyle(r.score, r.maxMarks).bar }} /></div>
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader><CardTitle>Strengths and areas to improve</CardTitle></CardHeader>
+                  <CardContent className="space-y-4 text-sm">
+                    <div><div className="mb-1 flex items-center gap-2 font-semibold"><CheckCircle2 className="h-4 w-4 text-green-500" />Strengths</div>
+                      <ul className="list-disc space-y-1 pl-5">{results.filter((r) => pct(r.score, r.maxMarks) >= 70).map((r) => <li key={r.questionId}>{r.category}: {r.score}/{r.maxMarks}</li>)}{!results.some((r) => pct(r.score, r.maxMarks) >= 70) && <li>No category reached 70% yet — focus on answering the question directly.</li>}</ul></div>
+                    <div><div className="mb-1 flex items-center gap-2 font-semibold"><TrendingUp className="h-4 w-4 text-amber-500" />Areas to improve</div>
+                      <ul className="list-disc space-y-1 pl-5">{results.filter((r) => pct(r.score, r.maxMarks) < 70).map((r) => <li key={r.questionId}>{r.category}: {r.relevant ? r.improvedAnswerHint : r.reason}</li>)}{!results.some((r) => pct(r.score, r.maxMarks) < 70) && <li>Try a harder role next time.</li>}</ul></div>
+                  </CardContent>
+                </Card>
+              </div>
+
               <Card>
-                <CardHeader><CardTitle>Question-by-question feedback</CardTitle><CardDescription>Your answer, score, strengths and what a strong answer covers</CardDescription></CardHeader>
+                <CardHeader><CardTitle>Question-by-question feedback</CardTitle><CardDescription>Your answer, marks, matched and missing keywords, and what a strong answer covers</CardDescription></CardHeader>
                 <CardContent className="space-y-5">
                   {results.map((r, i) => (
-                    <article key={r.category} className="rounded-xl border border-border p-5">
+                    <article key={r.questionId} className="rounded-xl border border-border p-5">
                       <div className="flex flex-wrap items-start justify-between gap-4">
                         <div className="flex flex-1 items-start gap-3"><div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-sm font-bold text-primary">{i + 1}</div><div><div className="text-xs font-bold uppercase tracking-wider text-primary">{r.category}</div><h4 className="mt-1 font-semibold leading-6">{r.question}</h4></div></div>
-                        <div className={cn('min-w-20 rounded-xl px-4 py-2 text-center', TONE[scoreTone(r.score)].bg)}><div className={cn('text-2xl font-bold', TONE[scoreTone(r.score)].text)}>{r.score}</div><div className="text-xs text-muted-foreground">/ 100</div></div>
+                        <div className={cn('min-w-20 rounded-xl px-4 py-2 text-center', markStyle(r.score, r.maxMarks).badge)}><div className="text-2xl font-bold">{r.score}</div><div className="text-xs opacity-80">/ {r.maxMarks}</div></div>
                       </div>
                       <div className="mt-4 rounded-xl bg-muted/60 p-4"><div className="mb-1 text-xs font-bold uppercase tracking-wider text-muted-foreground">Your answer</div><p className="whitespace-pre-wrap text-sm leading-6">{r.answer}</p></div>
+                      {!r.relevant ? (
+                        <p className="mt-3 rounded-xl border border-red-200 bg-red-50 p-3 text-sm font-medium text-red-700 dark:border-red-500/30 dark:bg-red-500/10 dark:text-red-300">Irrelevant answer: 0 marks. {r.reason.replace(/^Irrelevant answer:\s*/, '')}</p>
+                      ) : (
+                        <div className="mt-3 grid grid-cols-2 gap-2 text-center text-xs sm:grid-cols-4">
+                          {([['Required keywords', r.breakdown.mustHave, 0.4], ['Good-to-have', r.breakdown.goodToHave, 0.15], ['Concept coverage', r.breakdown.concepts, 0.3], ['Clarity', r.breakdown.clarity, 0.15]] as const).map(([l, v, w]) => (
+                            <div key={l} className="rounded-lg bg-muted/60 p-2"><div className="font-semibold tabular-nums">{v.toFixed(1)} / {(r.maxMarks * w).toFixed(1)}</div><div className="text-muted-foreground">{l}</div></div>
+                          ))}
+                        </div>
+                      )}
+                      {r.relevant && r.status === 'identity-only' && <p className="mt-2 text-sm text-amber-700">{r.reason}</p>}
+                      {(r.matchedKeywords.length > 0 || r.missingKeywords.length > 0) && r.relevant && (
+                        <div className="mt-3 flex flex-wrap gap-1.5">
+                          {r.matchedKeywords.map((k) => <span key={'m' + k} className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-700 dark:bg-green-500/20 dark:text-green-300">✓ {k}</span>)}
+                          {r.missingKeywords.map((k) => <span key={'x' + k} className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-500 dark:bg-white/10 dark:text-slate-300">{k}</span>)}
+                        </div>
+                      )}
+                      {r.incorrectClaims.length > 0 && <p className="mt-3 flex items-start gap-2 text-sm text-red-600"><AlertCircle className="mt-0.5 h-4 w-4 shrink-0" />{r.incorrectClaims.join(' ')}</p>}
                       <p className="mt-3 text-sm text-muted-foreground"><b className="text-foreground">Feedback:</b> {r.feedback}</p>
-                      <div className="mt-4 grid gap-4 md:grid-cols-2">
-                        <div className={cn('rounded-xl border p-4', TONE.good.border, TONE.good.bg)}><div className="mb-2 flex items-center gap-2 text-sm font-semibold"><CheckCircle2 className="h-4 w-4 text-green-500" />Strengths</div><ul className="list-disc space-y-1 pl-5 text-sm">{r.strengths.length ? r.strengths.map((s) => <li key={s}>{s}</li>) : <li>Keep practising — every attempt builds confidence.</li>}</ul></div>
-                        <div className={cn('rounded-xl border p-4', TONE.warn.border, TONE.warn.bg)}><div className="mb-2 flex items-center gap-2 text-sm font-semibold"><TrendingUp className="h-4 w-4 text-amber-500" />Improve next time</div><ul className="list-disc space-y-1 pl-5 text-sm">{r.improvements.length ? r.improvements.map((s) => <li key={s}>{s}</li>) : <li>Try the same question with a tougher follow-up.</li>}</ul></div>
-                      </div>
-                      <details className="mt-3 text-sm"><summary className="flex cursor-pointer items-center gap-2 font-medium text-primary"><Lightbulb className="h-4 w-4" />What a strong answer covers</summary><ul className="mt-2 list-disc space-y-1 pl-9 text-muted-foreground">{r.idealPoints.map((p) => <li key={p}>{p}</li>)}</ul></details>
+                      {r.improvedAnswerHint && <p className="mt-1 text-sm text-muted-foreground"><b className="text-foreground">Hint:</b> {r.improvedAnswerHint}</p>}
+                      <details className="mt-3 text-sm"><summary className="flex cursor-pointer items-center gap-2 font-medium text-primary"><Lightbulb className="h-4 w-4" />Sample strong answer</summary><p className="mt-2 pl-6 text-muted-foreground">{r.sampleIdealAnswer}</p></details>
                     </article>
                   ))}
                 </CardContent>
